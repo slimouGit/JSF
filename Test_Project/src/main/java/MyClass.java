@@ -40,7 +40,10 @@ public class MyClass implements Serializable {
 
     public void btnSubmit(){
         LOG.info("Value is {}", this.text);
-
+        if(this.text.equalsIgnoreCase("Dr. Jekyll")){
+            this.person = this.text;
+            changePerson();
+        }
     }
 
 
