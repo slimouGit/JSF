@@ -1,4 +1,5 @@
 import Interface.Position;
+import org.primefaces.context.RequestContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -8,8 +9,8 @@ import javax.inject.Named;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * User: salim
@@ -27,9 +28,9 @@ public class HappyEuro implements Serializable {
     private double amount;
 
     private Double amountBank = 0.0;
-    private Set<Position> income = new HashSet<>();
+    private List<Position> income = new ArrayList<>();
     private double amountIncome = 0.0;
-    private Set<Position> outcome = new HashSet<>();
+    private List<Position> outcome = new ArrayList<>();
     private double amountOutcome = 0.0;
 
     private double result;
@@ -40,21 +41,32 @@ public class HappyEuro implements Serializable {
         this.currentDate = formatter.format(LocalDate.now());
     }
 
-    public void calculatePosition(){
+    public void calculatePosition() {
         LOG.info("Input: Type {}, Position {} Amount {}", this.type, this.position, this.amount);
         Position position = new Position(this.type, this.position, this.amount);
-        if(this.type.equalsIgnoreCase("income")){
+        if (this.type.equalsIgnoreCase("income")) {
             this.income.add(position);
-            this.amountIncome+=position.getAmount();
-        }else{
+            this.amountIncome += position.getAmount();
+        } else {
             this.outcome.add(position);
-            this.amountOutcome+=position.getAmount();
+            this.amountOutcome += position.getAmount();
         }
         calculateResult();
     }
 
     private void calculateResult() {
         this.result = (this.amountBank + this.amountIncome) - this.amountOutcome;
+        RequestContext.getCurrentInstance().update("list");
+    }
+
+
+    public void removeItem(Position positionToDelete) {
+        if (positionToDelete.getType().equalsIgnoreCase("income")) {
+            this.income.remove(positionToDelete);
+        } else {
+            this.outcome.remove(positionToDelete);
+        }
+        calculateResult();
     }
 
 
@@ -94,11 +106,11 @@ public class HappyEuro implements Serializable {
         this.amountBank = amountBank;
     }
 
-    public Set<Position> getIncome() {
+    public List<Position> getIncome() {
         return income;
     }
 
-    public Set<Position> getOutcome() {
+    public List<Position> getOutcome() {
         return outcome;
     }
 
