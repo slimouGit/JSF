@@ -9,11 +9,13 @@
     <list default="true" id="56f4ea68-8674-44b0-9625-d3869ad722b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../HappyEuro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro/out/artifacts/HappyEuro_war_exploded.war/WEB-INF/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro/out/artifacts/HappyEuro_war_exploded.war/WEB-INF/classes/HappyEuro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro/out/artifacts/HappyEuro_war_exploded.war/WEB-INF/classes/Interface/Position.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro/out/artifacts/HappyEuro_war_exploded.war/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro/out/artifacts/HappyEuro_war_exploded.war/index.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro/src/main/java/HappyEuro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro/src/main/java/HappyEuro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro/src/main/java/Interface/Position.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro/target/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro/target/classes/HappyEuro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro/target/classes/Interface/Position.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro/web/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -124,6 +126,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -165,7 +168,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,14 +320,16 @@
       <updated>1558784574034</updated>
       <workItem from="1558784576991" duration="5694000" />
       <workItem from="1558797456902" duration="2485000" />
+      <workItem from="1558810761918" duration="592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8179000" />
+    <option name="totallyTimeSpent" value="8771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="208" y="299" width="1547" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17081372" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

@@ -1,4 +1,4 @@
-package Interface;
+package Positions;
 
 /**
  * User: salim

@@ -24,22 +24,23 @@
                 </p:inputText>
 
                 <p:outputLabel for="type" value="Art:"/>
-                <p:selectOneRadio id="type" value="#{happyEuro.type}" unselectable="true">
+                <p:selectOneRadio required="true" id="type" value="#{happyEuro.type}" unselectable="false">
                     <f:selectItem itemLabel="Einnahme" itemValue="income"/>
                     <f:selectItem itemLabel="Ausgabe" itemValue="outcome"/>
                 </p:selectOneRadio>
                 <p:outputLabel for="amount" value="Position: "/>
-                <p:inputText id="position" value="#{happyEuro.position}"/>
+                <p:inputText required="true" id="position" value="#{happyEuro.position}"/>
                 <p:outputLabel for="amount" value="Betrag: "/>
-                <p:inputText id="amount" value="#{happyEuro.amount}"/>
+                <p:inputText required="true" id="amount" value="#{happyEuro.amount}"/>
             </h:panelGrid>
-
-            <p:defaultCommand target="confirm"/>
+            <ui:remove>
+                <p:defaultCommand target="confirm"/>
+            </ui:remove>
             <p:commandButton id="confirm" update="list" value="Senden" action="#{happyEuro.calculatePosition()}"
                              ajax="false"/>
-
+            <br/>
             <p:separator/>
-
+            <br/>
             <ui:fragment>
 
                 <p:panel header="Kontostand">
@@ -48,10 +49,10 @@
 
             </ui:fragment>
 
-            <p:separator/>
+            <br/>
+            <br/>
 
             <ui:fragment id="list">
-
                 <ui:fragment rendered="#{not empty happyEuro.income}">
                     <p:panel header="Einnahmen">
                         <p:dataTable id="incomeList" var="income" value="#{happyEuro.income}">
@@ -68,11 +69,12 @@
                         </p:dataTable>
                     </p:panel>
                     <p:panel header="Einnahmen Gesamt">
-                        <p:outputLabel value="#{happyEuro.amountIncome}"/>
+                        <p:outputLabel id="amountIncome" value="#{happyEuro.amountIncome}"/>
                     </p:panel>
                 </ui:fragment>
 
-                <p:separator/>
+                <br/>
+                <br/>
 
                 <ui:fragment rendered="#{not empty happyEuro.outcome}">
                     <p:panel header="Ausgaben">
@@ -90,11 +92,12 @@
                         </p:dataTable>
                     </p:panel>
                     <p:panel header="Ausgaben Gesamt">
-                        <p:outputLabel value="#{happyEuro.amountOutcome}"/>
+                        <p:outputLabel id="amountOutcome" value="#{happyEuro.amountOutcome}"/>
                     </p:panel>
                 </ui:fragment>
 
-                <p:separator/>
+                <br/>
+                <br/>
 
                 <ui:fragment>
                     <p:panel header="Gesamt">

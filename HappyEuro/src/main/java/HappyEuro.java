@@ -1,4 +1,4 @@
-import Interface.Position;
+import Positions.Position;
 import org.primefaces.context.RequestContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -63,10 +63,28 @@ public class HappyEuro implements Serializable {
     public void removeItem(Position positionToDelete) {
         if (positionToDelete.getType().equalsIgnoreCase("income")) {
             this.income.remove(positionToDelete);
+            calculateIncome(this.income);
         } else {
             this.outcome.remove(positionToDelete);
+            calculateOutcome(this.outcome);
         }
         calculateResult();
+    }
+
+    private void calculateOutcome(List<Position> outcome) {
+        this.amountOutcome = 0.0;
+        for(Position item:outcome){
+            this.amountOutcome+=item.getAmount();
+        }
+        RequestContext.getCurrentInstance().update("amountOutcome");
+    }
+
+    private void calculateIncome(List<Position> income) {
+        this.amountIncome = 0.0;
+        for(Position item:income){
+            this.amountIncome+=item.getAmount();
+        }
+        RequestContext.getCurrentInstance().update("amountIncome");
     }
 
 
