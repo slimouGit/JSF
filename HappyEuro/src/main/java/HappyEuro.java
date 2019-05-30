@@ -1,3 +1,4 @@
+import Interface.Bearbeitbar;
 import Positions.Position;
 import org.primefaces.context.RequestContext;
 import org.slf4j.Logger;
@@ -19,7 +20,7 @@ import java.util.List;
 
 @Named
 @ViewScoped
-public class HappyEuro implements Serializable {
+public class HappyEuro implements Serializable, Bearbeitbar {
     private final Logger LOG = LoggerFactory.getLogger(HappyEuro.class);
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.YYYY");
     private String currentDate;
@@ -146,5 +147,16 @@ public class HappyEuro implements Serializable {
 
     public double getResult() {
         return result;
+    }
+
+
+    @Override
+    public void deleteItem(Position positionToDelete) {
+
+    }
+
+    @Override
+    public void replaceItem(Position positionToReplace) {
+
     }
 }
