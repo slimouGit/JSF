@@ -7,45 +7,55 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
 <h:head>
-   <title>HappyEuro</title>
+    <title>HappyEuro</title>
 </h:head>
-   <f:view>
+<f:view>
 
-      <h:form>
-         <p:growl id="msgs" showDetail="true" />
+    <h:form>
+        <p:growl id="msgs" showDetail="true"/>
 
-         <p:panel header="#{happyEuro.projectName}" style="margin-bottom:10px;">
-            <h:panelGrid columns="2" cellpadding="5">
+        <p:panel header="#{happyEuro.projectName}" style="margin-bottom:10px;">
+            <h:panelGrid columns="3" cellpadding="5">
 
-               <p:outputLabel for="position" value="Position: " />
-               <p:selectOneMenu id="position" value="#{happyEuro.position}" style="width:150px">
-                  <f:selectItem itemLabel="Select Position" itemValue="" noSelectionOption="true" />
-                  <f:selectItems value="#{happyEuro.positions}" />
-               </p:selectOneMenu>
+                <ui:remove>
+                </ui:remove>
+                    <p:outputLabel for="position" value="Position: "/>
+                    <p:selectOneMenu id="position" value="#{happyEuro.positionDropdown}" style="width:150px">
+                        <f:selectItem itemLabel="Select Position" itemValue="" noSelectionOption="true"/>
+                        <f:selectItems value="#{happyEuro.positions}"/>
+                    </p:selectOneMenu>
+
+                <p:commandButton value="Submit" update="msgs selectedPosition positionList"
+                                 action="#{happyEuro.displayDropdownValue()}"/>
+
+                <p:outputLabel value="Position: "/>
+                <p:autoComplete value="#{happyEuro.positionAuto}" completeMethod="#{happyEuro.generateAutoCompletedList()}"/>
+
+                <p:commandButton value="Submit" update="msgs selectedPosition positionList"
+                                 action="#{happyEuro.displayAutoselectValue()}"/>
 
             </h:panelGrid>
 
             <p:outputLabel id="selectedPosition" value="#{happyEuro.selectedPosition}"/>
 
-            <p:separator />
+            <p:separator/>
 
-            <p:commandButton value="Submit" update="msgs selectedPosition positionList" action="#{happyEuro.displayLocation()}" />
 
-            <p:separator />
+            <p:separator/>
 
             <p:dataTable id="positionList" var="pos" value="#{happyEuro.he_bookList}">
-               <p:column headerText="Type">
-                  <h:outputText value="#{pos.type}"/>
-               </p:column>
-               <p:column headerText="Position">
-                  <h:outputText value="#{pos.position}"/>
-               </p:column>
-               <p:column headerText="Betrag">
-                  <h:outputText value="#{pos.amount}"/>
-               </p:column>
+                <p:column headerText="Type">
+                    <h:outputText value="#{pos.type}"/>
+                </p:column>
+                <p:column headerText="Position">
+                    <h:outputText value="#{pos.position}"/>
+                </p:column>
+                <p:column headerText="Betrag">
+                    <h:outputText value="#{pos.amount}"/>
+                </p:column>
             </p:dataTable>
-         </p:panel>
-      </h:form>
+        </p:panel>
+    </h:form>
 
-   </f:view>
+</f:view>
 </html>
