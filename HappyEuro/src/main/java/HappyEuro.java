@@ -60,6 +60,7 @@ public class HappyEuro implements Serializable, Bearbeitbar {
         RequestContext.getCurrentInstance().update("list");
     }
 
+
     public void removeItem(Position positionToDelete) {
         if (positionToDelete.getType().equalsIgnoreCase("income")) {
             this.income.remove(positionToDelete);
@@ -70,6 +71,7 @@ public class HappyEuro implements Serializable, Bearbeitbar {
         }
         calculateResult();
     }
+
 
     private void calculateSession(List<Position> positions, String idToUpdate) {
         double valueToCal = 0.0;
@@ -83,6 +85,8 @@ public class HappyEuro implements Serializable, Bearbeitbar {
         }
         RequestContext.getCurrentInstance().update(idToUpdate);
     }
+
+
 
     @Override
     public void deleteItem(Position item) {
