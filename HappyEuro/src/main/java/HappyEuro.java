@@ -60,34 +60,65 @@ public class HappyEuro implements Serializable, Bearbeitbar {
         RequestContext.getCurrentInstance().update("list");
     }
 
-
     public void removeItem(Position positionToDelete) {
         if (positionToDelete.getType().equalsIgnoreCase("income")) {
             this.income.remove(positionToDelete);
-            calculateIncome(this.income);
+            calculateSession(this.income, "amountIncome");
         } else {
             this.outcome.remove(positionToDelete);
-            calculateOutcome(this.outcome);
+            calculateSession(this.outcome, "amountOutcome");
         }
         calculateResult();
     }
 
-    private void calculateOutcome(List<Position> outcome) {
-        this.amountOutcome = 0.0;
-        for(Position item:outcome){
-            this.amountOutcome+=item.getAmount();
+    private void calculateSession(List<Position> positions, String idToUpdate) {
+        double valueToCal = 0.0;
+        for(Position item:positions){
+            valueToCal +=item.getAmount();
         }
-        RequestContext.getCurrentInstance().update("amountOutcome");
+        if(idToUpdate.equalsIgnoreCase("amountIncome")){
+            this.amountIncome = valueToCal;
+        }else {
+            this.amountOutcome = valueToCal;
+        }
+        RequestContext.getCurrentInstance().update(idToUpdate);
     }
 
-    private void calculateIncome(List<Position> income) {
-        this.amountIncome = 0.0;
-        for(Position item:income){
-            this.amountIncome+=item.getAmount();
+    @Override
+    public void deleteItem(Position item) {
+        if (item.getType().equalsIgnoreCase("income")) {
+            this.income.remove(item);
+            calculateSession(this.income, "amountIncome");
+        } else {
+            this.outcome.remove(item);
+            calculateSession(this.outcome, "amountOutcome");
         }
-        RequestContext.getCurrentInstance().update("amountIncome");
+        calculateResult();
     }
 
+    @Override
+    public void replaceItem(Position item) {
+        if (item.getType().equalsIgnoreCase("income")) {
+            exchangeItem(item, "outcome", this.outcome, this.income);
+            calculateSession(this.income, "amountIncome");
+            calculateSession(this.outcome, "amountOutcome");
+
+        } else {
+            exchangeItem(item, "income", this.income, this.outcome);
+            calculateSession(this.income, "amountIncome");
+            calculateSession(this.outcome, "amountOutcome");
+
+        }
+        calculateResult();
+    }
+
+    private void exchangeItem(Position item, String type, List<Position> listToExpand, List<Position> listToReduce) {
+        item.setType(type);
+        listToExpand.add(item);
+        listToReduce.remove(item);
+    }
+
+    /*************************************************************************************/
 
     public String getCurrentDate() {
         return currentDate;
@@ -147,16 +178,5 @@ public class HappyEuro implements Serializable, Bearbeitbar {
 
     public double getResult() {
         return result;
-    }
-
-
-    @Override
-    public void deleteItem(Position positionToDelete) {
-
-    }
-
-    @Override
-    public void replaceItem(Position positionToReplace) {
-
     }
 }

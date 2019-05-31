@@ -36,7 +36,7 @@
             <ui:remove>
                 <p:defaultCommand target="confirm"/>
             </ui:remove>
-            <p:commandButton id="confirm" update="list" value="Senden" action="#{happyEuro.calculatePosition()}"
+            <p:commandButton id="confirm" update="list" value="book" action="#{happyEuro.calculatePosition()}"
                              ajax="false"/>
             <br/>
             <p:separator/>
@@ -64,7 +64,9 @@
                             </p:column>
                             <p:column>
                                 <p:commandButton value="delete" update="incomeList list result"
-                                                 action="#{happyEuro.removeItem(income)}" ajax="false"/>
+                                                 action="#{happyEuro.deleteItem(income)}" ajax="false"/>
+                                <p:commandButton value="replace" update="incomeList list result"
+                                                 action="#{happyEuro.replaceItem(income)}" ajax="false"/>
                             </p:column>
                         </p:dataTable>
                     </p:panel>
@@ -87,7 +89,9 @@
                             </p:column>
                             <p:column>
                                 <p:commandButton value="delete" update="outcomeList result"
-                                                 action="#{happyEuro.removeItem(outcome)}" ajax="false"/>
+                                                 action="#{happyEuro.deleteItem(outcome)}" ajax="false"/>
+                                <p:commandButton value="replace" update="incomeList list result"
+                                                 action="#{happyEuro.replaceItem(outcome)}" ajax="false"/>
                             </p:column>
                         </p:dataTable>
                     </p:panel>
@@ -106,6 +110,10 @@
                 </ui:fragment>
 
             </ui:fragment>
+
+            <p:commandButton value="save" type="button" style="display:block;margin-bottom: 20px">
+                <p:printer target="@form" />
+            </p:commandButton>
         </h:form>
     </h:body>
 </f:view>
