@@ -7,7 +7,11 @@ package Enums;
 public enum HE_List {
     MIETE(HE_Type.OUT, "Miete",800.00),
     STROM(HE_Type.OUT, "Strom",65.00),
-    INTERNET(HE_Type.OUT, "Internet",39.95);
+    INTERNET(HE_Type.OUT, "Internet",39.95),
+    STRATO(HE_Type.OUT, "Strato",9.95),
+    PARKPLATZ(HE_Type.IN, "Parkplatz",50.00),
+    MIMI_MIETE(HE_Type.IN, "Mimi Miete",325.00),
+    ADOBE(HE_Type.OUT, "Adobe",29.95);
 
     private final String position;
     private final double amount;

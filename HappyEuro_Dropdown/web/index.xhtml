@@ -10,12 +10,11 @@
    <title>HappyEuro</title>
 </h:head>
    <f:view>
-      <h:outputLabel value="#{happyEuro.projectName}"/>
 
       <h:form>
          <p:growl id="msgs" showDetail="true" />
 
-         <p:panel header="Select a Position" style="margin-bottom:10px;">
+         <p:panel header="#{happyEuro.projectName}" style="margin-bottom:10px;">
             <h:panelGrid columns="2" cellpadding="5">
 
                <p:outputLabel for="position" value="Position: " />
@@ -30,7 +29,21 @@
 
             <p:separator />
 
-            <p:commandButton value="Submit" update="msgs selectedPosition" action="#{happyEuro.displayLocation()}" />
+            <p:commandButton value="Submit" update="msgs selectedPosition positionList" action="#{happyEuro.displayLocation()}" />
+
+            <p:separator />
+
+            <p:dataTable id="positionList" var="pos" value="#{happyEuro.he_bookList}">
+               <p:column headerText="Type">
+                  <h:outputText value="#{pos.type}"/>
+               </p:column>
+               <p:column headerText="Position">
+                  <h:outputText value="#{pos.position}"/>
+               </p:column>
+               <p:column headerText="Betrag">
+                  <h:outputText value="#{pos.amount}"/>
+               </p:column>
+            </p:dataTable>
          </p:panel>
       </h:form>
 
