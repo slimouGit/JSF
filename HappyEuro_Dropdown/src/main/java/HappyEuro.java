@@ -98,6 +98,10 @@ public class HappyEuro implements Serializable {
         FacesContext.getCurrentInstance().addMessage(null, msg);
     }
 
+    public void deletePosition(Position pos){
+        this.he_bookList.remove(pos);
+    }
+
     public void bookPosition(String position) {
         LOG.info("Position {}", position);
         Position bookedPosition = new Position(HE_List.valueOf(position).getType().getTypeValue(),

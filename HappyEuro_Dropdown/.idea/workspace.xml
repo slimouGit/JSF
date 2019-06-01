@@ -7,18 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c3167da-3a28-48df-8c44-cef4fef7364f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../HappyEuro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Enums/HE_List.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Enums/HE_List.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/HappyEuro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/HE_List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/HE_List.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HappyEuro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HappyEuro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Enums/HE_List.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Enums/HE_List.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HappyEuro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/messages.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.xhtml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1989">
-              <caret line="117" selection-start-line="117" selection-end-line="117" />
+            <state relative-caret-position="368">
+              <caret line="101" column="37" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -78,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+            <state relative-caret-position="385">
+              <caret line="55" column="116" selection-start-line="55" selection-start-column="116" selection-end-line="55" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -102,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Enums/HE_Type.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -411,18 +400,18 @@
       <updated>1559291775485</updated>
       <workItem from="1559291778969" duration="9698000" />
       <workItem from="1559329277930" duration="3388000" />
-      <workItem from="1559377600382" duration="11387000" />
+      <workItem from="1559377600382" duration="11685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24473000" />
+    <option name="totallyTimeSpent" value="24771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1748401" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1748401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -433,7 +422,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32917964" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3811007" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3811007" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -547,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -561,17 +543,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Enums/HE_Type.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="55" column="116" selection-start-line="55" selection-start-column="116" selection-end-line="55" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="101" column="37" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
         </state>
       </provider>
     </entry>

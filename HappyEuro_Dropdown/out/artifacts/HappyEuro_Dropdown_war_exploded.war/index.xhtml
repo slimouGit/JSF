@@ -24,18 +24,19 @@
                         <f:selectItems value="#{happyEuro.positions}"/>
                     </p:selectOneMenu>
 
-                <p:commandButton value="#{msg['button.SUBMIT']}" update="msgs selectedPosition positionList"
+                <p:commandButton value="#{msg['button.SUBMIT']}" update="msgs positionList"
                                  action="#{happyEuro.displayDropdownValue()}"/>
 
                 <p:outputLabel value="Position: "/>
                 <p:autoComplete value="#{happyEuro.positionAuto}" completeMethod="#{happyEuro.generateAutoCompletedList()}"/>
 
-                <p:commandButton value="#{msg['button.SUBMIT']}" update="msgs selectedPosition positionList"
+                <p:commandButton value="#{msg['button.SUBMIT']}" update="msgs positionList"
                                  action="#{happyEuro.displayAutoselectValue()}"/>
 
             </h:panelGrid>
-
-            <p:outputLabel id="selectedPosition" value="#{happyEuro.selectedPosition}"/>
+            <ui:remove>
+                <p:outputLabel id="selectedPosition" value="#{happyEuro.selectedPosition}"/>
+            </ui:remove>
 
             <p:separator/>
 
@@ -53,6 +54,7 @@
                 </p:column>
                 <p:column headerText="">
                     <p:commandButton value="Eintragen" action="#{happyEuro.addPosition()}" update="positionList" rendered="#{empty pos.position}"/>
+                    <p:commandButton value="Löschen" action="#{happyEuro.deletePosition(pos)}" update="positionList"/>
                 </p:column>
             </p:dataTable>
         </p:panel>

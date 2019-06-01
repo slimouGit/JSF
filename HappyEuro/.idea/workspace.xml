@@ -7,18 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c17031-59b8-4d69-b7e5-0608b8552904" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Enums/HE_List.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Enums/HE_List.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/HappyEuro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/java/Enums/HE_List.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/java/Enums/HE_List.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/java/HappyEuro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/java/HappyEuro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/resources/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/Enums/HE_List.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/Enums/HE_List.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/HappyEuro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/messages.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/web/index.xhtml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -374,6 +364,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="98" y="70" width="1547" height="1100" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20645595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
