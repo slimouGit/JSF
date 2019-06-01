@@ -44,23 +44,21 @@ public class HappyEuro implements Serializable {
         positions.add(HE_List.PARKPLATZ);
         positions.add(HE_List.OUTPUT);
         positions.add(HE_List.INTAKE);
-        generateAutoCompletedList();
+        positions.add(HE_List.BANK);
     }
 
-    public List<HE_List> generateAutoCompletedList() {
+    public List<HE_List> positionList(String enteredValue) {
+        LOG.info("POS {}", enteredValue);
         List<HE_List> he_positions = new ArrayList<HE_List>();
         for (HE_List item : HE_List.values()) {
-            he_positions.add(item);
+            if (item.toString().toLowerCase().startsWith(enteredValue.toLowerCase())) {
+                he_positions.add(item);
+            }
         }
-//        he_positions.add(HE_List.MIETE);
-//        he_positions.add(HE_List.STROM);
-//        he_positions.add(HE_List.INTERNET);
-//        he_positions.add(HE_List.ADOBE);
-//        he_positions.add(HE_List.MIMI_MIETE);
-//        he_positions.add(HE_List.STRATO);
-//        he_positions.add(HE_List.PARKPLATZ);
         return he_positions;
     }
+
+
 
     public void displayDropdownValue() {
         LOG.info("Selected value {} ", HE_List.valueOf(positionDropdown).getPosition());
@@ -118,6 +116,18 @@ public class HappyEuro implements Serializable {
         he_bookList.add(addedPosition);
         if( !he_bookList.isEmpty())
             he_bookList.remove( he_bookList.size() - 2 );
+        setPosition(null);
+        setAmount(0);
+    }
+
+    public boolean renderInput(){
+        boolean isVisible = true;
+        if(null!=this.position){
+            if(this.position.equalsIgnoreCase("Konto")){
+                isVisible = false;
+            }
+        }
+        return isVisible;
     }
 
 
@@ -184,4 +194,6 @@ public class HappyEuro implements Serializable {
     public List<Position> getOutputs() {
         return outputs;
     }
+
+
 }

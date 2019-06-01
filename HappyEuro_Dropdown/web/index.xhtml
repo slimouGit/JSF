@@ -28,7 +28,7 @@
                                  action="#{happyEuro.displayDropdownValue()}"/>
 
                 <p:outputLabel value="Position: "/>
-                <p:autoComplete value="#{happyEuro.positionAuto}" completeMethod="#{happyEuro.generateAutoCompletedList()}"/>
+                <p:autoComplete value="#{happyEuro.positionAuto}" completeMethod="#{happyEuro.positionList}"/>
 
                 <p:commandButton value="#{msg['button.SUBMIT']}" update="msgs positionList"
                                  action="#{happyEuro.displayAutoselectValue()}"/>

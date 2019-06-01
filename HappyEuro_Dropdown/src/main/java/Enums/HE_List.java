@@ -13,7 +13,8 @@ public enum HE_List {
     MIMI_MIETE(HE_Type.IN, "Mimi Miete",325.00),
     ADOBE(HE_Type.OUT, "Adobe",29.95),
     OUTPUT(HE_Type.OUT, null,0.0),
-    INTAKE(HE_Type.IN, null,0.0);
+    INTAKE(HE_Type.IN, null,0.0),
+    BANK(HE_Type.BANK, null,0.0);
 
     private final String position;
     private final double amount;
