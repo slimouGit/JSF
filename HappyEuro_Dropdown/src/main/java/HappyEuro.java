@@ -9,7 +9,9 @@ import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * User: salim
@@ -24,7 +26,7 @@ public class HappyEuro implements Serializable {
     private String positionAuto;
     private List<HE_List> positions = new ArrayList<HE_List>();
     private String selectedPosition;
-    private List<Position> he_bookList = new ArrayList<Position>();
+    private Set<Position> he_bookList = new HashSet<Position>();
 
     @PostConstruct
     public void init() {
@@ -125,7 +127,7 @@ public class HappyEuro implements Serializable {
         return selectedPosition;
     }
 
-    public List<Position> getHe_bookList() {
+    public Set<Position> getHe_bookList() {
         return he_bookList;
     }
 }

@@ -13,7 +13,7 @@
 
     <h:form>
         <p:growl id="msgs" showDetail="true"/>
-
+        <h:outputText value="#{msg['headline.HE_START']}"></h:outputText>
         <p:panel header="#{happyEuro.projectName}" style="margin-bottom:10px;">
             <h:panelGrid columns="3" cellpadding="5">
 
@@ -21,7 +21,7 @@
                 </ui:remove>
                     <p:outputLabel for="position" value="Position: "/>
                     <p:selectOneMenu id="position" value="#{happyEuro.positionDropdown}" style="width:150px">
-                        <f:selectItem itemLabel="Select Position" itemValue="" noSelectionOption="true"/>
+                        <f:selectItem itemLabel="#{msg['position.SELECT']}" itemValue="" noSelectionOption="true"/>
                         <f:selectItems value="#{happyEuro.positions}"/>
                     </p:selectOneMenu>
 
