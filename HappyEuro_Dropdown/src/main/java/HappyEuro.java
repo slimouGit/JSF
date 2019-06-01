@@ -1,4 +1,4 @@
-import Enums.*;
+import Enums.HE_List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,9 +9,7 @@ import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * User: salim
@@ -26,7 +24,13 @@ public class HappyEuro implements Serializable {
     private String positionAuto;
     private List<HE_List> positions = new ArrayList<HE_List>();
     private String selectedPosition;
-    private Set<Position> he_bookList = new HashSet<Position>();
+    private List<Position> he_bookList = new ArrayList<Position>();
+    private List<Position> intakes = new ArrayList<Position>();
+    private List<Position> outputs = new ArrayList<Position>();
+
+    private String type;
+    private String position;
+    private double amount;
 
     @PostConstruct
     public void init() {
@@ -38,6 +42,8 @@ public class HappyEuro implements Serializable {
         positions.add(HE_List.MIMI_MIETE);
         positions.add(HE_List.STRATO);
         positions.add(HE_List.PARKPLATZ);
+        positions.add(HE_List.OUTPUT);
+        positions.add(HE_List.INTAKE);
         generateAutoCompletedList();
     }
 
@@ -58,6 +64,7 @@ public class HappyEuro implements Serializable {
 
     public void displayDropdownValue() {
         LOG.info("Selected value {} ", HE_List.valueOf(positionDropdown).getPosition());
+        setType(HE_List.valueOf(positionDropdown).getType().getTypeValue());
         FacesMessage msg;
         if (positionDropdown != null) {
             bookPosition(positionDropdown);
@@ -75,6 +82,7 @@ public class HappyEuro implements Serializable {
 
     public void displayAutoselectValue() {
         LOG.info("Selected value {} ", HE_List.valueOf(positionAuto).getPosition());
+        setType(HE_List.valueOf(positionAuto).getType().getTypeValue());
         FacesMessage msg;
         if (positionAuto != null) {
             bookPosition(positionAuto);
@@ -90,18 +98,28 @@ public class HappyEuro implements Serializable {
         FacesContext.getCurrentInstance().addMessage(null, msg);
     }
 
-    private void bookPosition(String position) {
+    public void bookPosition(String position) {
+        LOG.info("Position {}", position);
         Position bookedPosition = new Position(HE_List.valueOf(position).getType().getTypeValue(),
                 HE_List.valueOf(position).getPosition(),
                 HE_List.valueOf(position).getAmount());
         he_bookList.add(bookedPosition);
     }
 
+    public void addPosition() {
+        LOG.info("Position {}", this.type);
+        Position addedPosition = new Position(this.type,
+                this.position,
+                this.amount);
+        he_bookList.add(addedPosition);
+        if( !he_bookList.isEmpty())
+            he_bookList.remove( he_bookList.size() - 2 );
+    }
+
+
+
     /***********************************************************************/
 
-    public String getProjectName() {
-        return projectName;
-    }
 
     public String getPositionAuto() {
         return positionAuto;
@@ -127,7 +145,39 @@ public class HappyEuro implements Serializable {
         return selectedPosition;
     }
 
-    public Set<Position> getHe_bookList() {
+    public List<Position> getHe_bookList() {
         return he_bookList;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public List<Position> getIntakes() {
+        return intakes;
+    }
+
+    public List<Position> getOutputs() {
+        return outputs;
     }
 }

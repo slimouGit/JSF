@@ -11,7 +11,9 @@ public enum HE_List {
     STRATO(HE_Type.OUT, "Strato",9.95),
     PARKPLATZ(HE_Type.IN, "Parkplatz",50.00),
     MIMI_MIETE(HE_Type.IN, "Mimi Miete",325.00),
-    ADOBE(HE_Type.OUT, "Adobe",29.95);
+    ADOBE(HE_Type.OUT, "Adobe",29.95),
+    OUTPUT(HE_Type.OUT, null,0.0),
+    INTAKE(HE_Type.IN, null,0.0);
 
     private final String position;
     private final double amount;

@@ -13,8 +13,7 @@
 
     <h:form>
         <p:growl id="msgs" showDetail="true"/>
-        <h:outputText value="#{msg['headline.HE_START']}"></h:outputText>
-        <p:panel header="#{happyEuro.projectName}" style="margin-bottom:10px;">
+        <p:panel header="#{msg['headline.HE_START']}" style="margin-bottom:10px;">
             <h:panelGrid columns="3" cellpadding="5">
 
                 <ui:remove>
@@ -25,13 +24,13 @@
                         <f:selectItems value="#{happyEuro.positions}"/>
                     </p:selectOneMenu>
 
-                <p:commandButton value="Submit" update="msgs selectedPosition positionList"
+                <p:commandButton value="#{msg['button.SUBMIT']}" update="msgs selectedPosition positionList"
                                  action="#{happyEuro.displayDropdownValue()}"/>
 
                 <p:outputLabel value="Position: "/>
                 <p:autoComplete value="#{happyEuro.positionAuto}" completeMethod="#{happyEuro.generateAutoCompletedList()}"/>
 
-                <p:commandButton value="Submit" update="msgs selectedPosition positionList"
+                <p:commandButton value="#{msg['button.SUBMIT']}" update="msgs selectedPosition positionList"
                                  action="#{happyEuro.displayAutoselectValue()}"/>
 
             </h:panelGrid>
@@ -40,18 +39,20 @@
 
             <p:separator/>
 
-
-            <p:separator/>
-
-            <p:dataTable id="positionList" var="pos" value="#{happyEuro.he_bookList}">
+            <p:dataTable emptyMessage="#{msg['table.EMPTY']}" id="positionList" var="pos" value="#{happyEuro.he_bookList}">
                 <p:column headerText="Type">
                     <h:outputText value="#{pos.type}"/>
                 </p:column>
                 <p:column headerText="Position">
-                    <h:outputText value="#{pos.position}"/>
+                    <p:inputText value="#{happyEuro.position}" rendered="#{empty pos.position}"/>
+                    <h:outputText value="#{pos.position}" rendered="#{not empty pos.position}"/>
                 </p:column>
                 <p:column headerText="Betrag">
-                    <h:outputText value="#{pos.amount}"/>
+                    <p:inputText value="#{happyEuro.amount}" rendered="#{pos.amount==0.0}"/>
+                    <h:outputText value="#{pos.amount}" rendered="#{pos.amount>0.0}"/>
+                </p:column>
+                <p:column headerText="">
+                    <p:commandButton value="Eintragen" action="#{happyEuro.addPosition()}" update="positionList" rendered="#{empty pos.position}"/>
                 </p:column>
             </p:dataTable>
         </p:panel>
