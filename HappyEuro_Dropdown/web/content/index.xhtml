@@ -13,37 +13,34 @@
 </h:head>
 <f:view>
 
-    <components:componentOutputLabel
-            labelValue="composit component loaded"/>
-    <h:form>
+    <h:form id="form">
         <p:growl id="msgs" showDetail="true"/>
         <p:panel header="#{msg['headline.HE_START']}" style="margin-bottom:10px;">
             <h:panelGrid columns="3" cellpadding="5">
                 <ui:remove>
                 </ui:remove>
-                    <p:outputLabel for="position" value="Position: "/>
-                    <p:selectOneMenu id="position" value="#{happyEuro.positionDropdown}" style="width:150px">
-                        <f:selectItem itemLabel="#{msg['position.SELECT']}" itemValue="" noSelectionOption="true"/>
-                        <f:selectItems value="#{happyEuro.positions}"/>
-                    </p:selectOneMenu>
+                <p:outputLabel for="position" value="Position: "/>
+                <p:selectOneMenu id="position" value="#{happyEuro.positionDropdown}" style="width:150px">
+                    <f:selectItem itemLabel="#{msg['position.SELECT']}" itemValue="" noSelectionOption="true"/>
+                    <f:selectItems value="#{happyEuro.positions}"/>
+                </p:selectOneMenu>
 
-                <p:commandButton value="#{msg['button.SUBMIT']}" update="msgs positionList"
-                                 action="#{happyEuro.displayDropdownValue()}"/>
+                <components:componentButton buttonValue="#{msg['button.SUBMIT']}" toUpdate="form:msgs form:positionList"
+                                            buttonAction="#{happyEuro.displayDropdownValue()}"/>
 
                 <p:outputLabel value="Position: "/>
                 <p:autoComplete value="#{happyEuro.positionAuto}" completeMethod="#{happyEuro.positionList}"/>
 
-                <p:commandButton value="#{msg['button.SUBMIT']}" update="msgs positionList"
-                                 action="#{happyEuro.displayAutoselectValue()}"/>
+                <components:componentButton buttonValue="#{msg['button.SUBMIT']}" toUpdate="form:msgs form:positionList"
+                                            buttonAction="#{happyEuro.displayAutoselectValue()}"/>
+
 
             </h:panelGrid>
-            <ui:remove>
-                <p:outputLabel id="selectedPosition" value="#{happyEuro.selectedPosition}"/>
-            </ui:remove>
 
             <p:separator/>
 
-            <p:dataTable emptyMessage="#{msg['table.EMPTY']}" id="positionList" var="pos" value="#{happyEuro.he_bookList}">
+            <p:dataTable emptyMessage="#{msg['table.EMPTY']}" id="positionList" var="pos"
+                         value="#{happyEuro.he_bookList}">
                 <p:column headerText="Type">
                     <h:outputText value="#{pos.type}"/>
                 </p:column>
@@ -56,8 +53,12 @@
                     <h:outputText value="#{pos.amount}" rendered="#{pos.amount>0.0}"/>
                 </p:column>
                 <p:column headerText="">
-                    <p:commandButton value="Eintragen" action="#{happyEuro.addPosition()}" update="positionList" rendered="#{empty pos.position}"/>
-                    <p:commandButton value="Löschen" action="#{happyEuro.deletePosition(pos)}" update="positionList"/>
+                    <components:componentButton buttonValue="Eintragen" toUpdate="form:msgs form:positionList"
+                                                buttonAction="#{happyEuro.addPosition()}" renderCondition="#{empty pos.position}"/>
+
+                    <components:componentButton buttonValue="Löschen" toUpdate="form:msgs form:positionList"
+                                                buttonAction="#{happyEuro.deletePosition(pos)}" />
+
                 </p:column>
             </p:dataTable>
         </p:panel>

@@ -7,17 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c3167da-3a28-48df-8c44-cef4fef7364f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../HappyEuro/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/resources/components/componentOutputLabel.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/components/componentButton.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro/out/artifacts/HappyEuro_war_exploded.war/WEB-INF/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro/out/artifacts/HappyEuro_war_exploded.war/WEB-INF/classes/HappyEuro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro/src/main/java/HappyEuro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro/src/main/java/HappyEuro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro/target/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro/target/classes/HappyEuro.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HappyEuro_Dropdown-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/HappyEuro_Dropdown-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/content/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/content/index.xhtml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,23 +42,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="122">
+              <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+        <entry file="file://$PROJECT_DIR$/web/content/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="64" selection-start-line="19" selection-start-column="3" selection-end-line="20" selection-end-column="64" />
+            <state relative-caret-position="230">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/resources/components/componentOutputLabel.xhtml">
+        <entry file="file://$PROJECT_DIR$/web/resources/components/componentButton.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="13" column="78" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/components/componentOutputLabel.xhtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
@@ -156,6 +158,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/components/componentOutputLabel.xhtml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/resources/components/componentOutputLabel.xhtml" />
         <option value="$PROJECT_DIR$/web/index.xhtml" />
+        <option value="$PROJECT_DIR$/web/resources/components/componentButton.xhtml" />
+        <option value="$PROJECT_DIR$/web/content/index.xhtml" />
       </list>
     </option>
   </component>
@@ -181,8 +185,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="98" />
-    <option name="y" value="70" />
+    <option name="x" value="28" />
+    <option name="y" value="16" />
     <option name="width" value="1547" />
     <option name="height" value="1100" />
   </component>
@@ -217,21 +221,6 @@
               <item name="HappyEuro_Dropdown" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HappyEuro_Dropdown" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HappyEuro_Dropdown" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HappyEuro_Dropdown" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HappyEuro_Dropdown" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -243,22 +232,26 @@
               <item name="HappyEuro_Dropdown" type="b2602c69:ProjectViewProjectNode" />
               <item name="HappyEuro_Dropdown" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HappyEuro_Dropdown" type="b2602c69:ProjectViewProjectNode" />
               <item name="HappyEuro_Dropdown" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HappyEuro_Dropdown" type="b2602c69:ProjectViewProjectNode" />
               <item name="HappyEuro_Dropdown" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HappyEuro_Dropdown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HappyEuro_Dropdown" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -270,7 +263,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/resources/components" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -279,7 +272,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\projekte\JSF_Sandbox\JSF\HappyEuro_Dropdown\web" />
+      <recent name="F:\projekte\JSF_Sandbox\JSF\HappyEuro_Dropdown\web\content" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\projekte\JSF_Sandbox\JSF\HappyEuro_Dropdown\web\resources\components" />
       <recent name="F:\projekte\JSF_Sandbox\JSF\HappyEuro_Dropdown\web\WEB-INF\resources" />
       <recent name="F:\projekte\JSF_Sandbox\JSF\HappyEuro_Dropdown\src\main\resources\components" />
     </key>
@@ -426,18 +424,18 @@
       <workItem from="1559329277930" duration="3388000" />
       <workItem from="1559377600382" duration="13941000" />
       <workItem from="1559418134622" duration="2899000" />
-      <workItem from="1559465583309" duration="4114000" />
+      <workItem from="1559465583309" duration="5784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34040000" />
+    <option name="totallyTimeSpent" value="35710000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="98" y="70" width="1547" height="1100" extended-state="0" />
+    <frame x="28" y="16" width="1547" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22259583" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22259583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -448,7 +446,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32885212" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.5687694" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5687694" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -566,13 +564,6 @@
       </provider>
       <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/composite.taglib.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -583,17 +574,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/resources/components/componentOutputLabel.xhtml">
+    <entry file="file://$PROJECT_DIR$/web/resources/components/componentOutputLabel.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="64" selection-start-line="19" selection-start-column="3" selection-end-line="20" selection-end-column="64" />
+        <state relative-caret-position="122">
+          <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/components/componentButton.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="78" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/content/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
