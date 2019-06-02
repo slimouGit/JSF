@@ -42,6 +42,7 @@ public class HappyEuro implements Serializable, Bearbeitbar {
         this.currentDate = formatter.format(LocalDate.now());
     }
 
+
     public void calculatePosition() {
         LOG.info("Input: Type {}, Position {} Amount {}", this.type, this.position, this.amount);
         Position position = new Position(this.type, this.position, this.amount);

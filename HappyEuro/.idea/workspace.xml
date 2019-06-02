@@ -7,18 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c17031-59b8-4d69-b7e5-0608b8552904" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/web/WEB-INF/resources/components/componentOutputLabel.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_war_exploded.war/WEB-INF/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_war_exploded.war/WEB-INF/classes/HappyEuro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HappyEuro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HappyEuro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HappyEuro.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Enums/HE_List.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Enums/HE_List.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/HappyEuro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/messages.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/java/Enums/HE_List.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/java/Enums/HE_List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/java/HappyEuro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/java/HappyEuro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/resources/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/Enums/HE_List.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/Enums/HE_List.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/HappyEuro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/HappyEuro_Dropdown-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/HappyEuro_Dropdown-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/web/index.xhtml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -55,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+            <state relative-caret-position="204">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -149,7 +147,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,6 +192,11 @@
             <path>
               <item name="HappyEuro" type="b2602c69:ProjectViewProjectNode" />
               <item name="HappyEuro" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HappyEuro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HappyEuro" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -206,7 +209,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,17 +370,18 @@
       <workItem from="1559283184716" duration="13048000" />
       <workItem from="1559397715866" duration="1981000" />
       <workItem from="1559417999052" duration="1367000" />
+      <workItem from="1559465552622" duration="1133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38195000" />
+    <option name="totallyTimeSpent" value="39328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="98" y="70" width="1547" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20645595" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20914593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -388,7 +392,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32946146" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37331954" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.37331954" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -422,25 +426,25 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HappyEuro.java</url>
-          <line>92</line>
+          <line>93</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HappyEuro.java</url>
-          <line>118</line>
+          <line>119</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HappyEuro.java</url>
-          <line>77</line>
+          <line>78</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HappyEuro.java</url>
-          <line>46</line>
+          <line>47</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
@@ -525,8 +529,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+        <state relative-caret-position="204">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
