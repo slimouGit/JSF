@@ -1,3 +1,6 @@
 body{
-    background: #ccc;
+    background: #fff;
+}
+.componentLabel{
+    background: yellow;
 }
