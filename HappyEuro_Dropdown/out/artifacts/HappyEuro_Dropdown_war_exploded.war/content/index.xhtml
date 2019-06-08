@@ -10,8 +10,15 @@
 >
 <h:head>
     <title>HappyEuro</title>
+    <f:metadata>
+        <f:viewParam name="he" value="#{happyEuro.name}"/>
+    </f:metadata>
 </h:head>
 <f:view>
+
+    <ui:insert name="header" >
+        <ui:include src="/template/header.xhtml" />
+    </ui:insert>
 
     <h:form id="form">
         <p:growl id="msgs" showDetail="true"/>
@@ -45,8 +52,8 @@
                     <h:outputText value="#{pos.type}"/>
                 </p:column>
                 <p:column headerText="Position">
-                    <p:inputText value="#{happyEuro.position}" rendered="#{empty pos.position}"/>
-                    <h:outputText value="#{pos.position}" rendered="#{not empty pos.position}"/>
+                        <p:inputText value="#{happyEuro.position}" rendered="#{empty pos.position}"/>
+                        <h:outputText value="#{pos.position}" rendered="#{not empty pos.position}"/>
                 </p:column>
                 <p:column headerText="Betrag">
                     <p:inputText value="#{happyEuro.amount}" rendered="#{pos.amount==0.0}"/>
@@ -54,14 +61,24 @@
                 </p:column>
                 <p:column headerText="">
                     <components:componentButton buttonValue="Eintragen" toUpdate="form:msgs form:positionList"
-                                                buttonAction="#{happyEuro.addPosition()}" renderCondition="#{empty pos.position}"/>
+                                                buttonAction="#{happyEuro.addPosition()}"
+                                                renderCondition="#{empty pos.position}"/>
+
+                    <components:componentButton buttonValue="Ändern" toUpdate="form:msgs form:positionList"
+                                                buttonAction="#{happyEuro.addPosition()}"
+                                                />
 
                     <components:componentButton buttonValue="Löschen" toUpdate="form:msgs form:positionList"
-                                                buttonAction="#{happyEuro.deletePosition(pos)}" />
+                                                buttonAction="#{happyEuro.deletePosition(pos)}"/>
 
                 </p:column>
             </p:dataTable>
         </p:panel>
+        <p:inputText value="#{happyEuro.name}" />
+        <components:componentButton buttonValue="Speichern" toUpdate="form:msgs form:positionList"
+                                    buttonAction="#{happyEuro.navigateTo('saved.xhtml')}"
+        />
+
     </h:form>
 
 </f:view>

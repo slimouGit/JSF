@@ -16,4 +16,7 @@
         <param-name>primefaces.THEME</param-name>
         <param-value>omega</param-value>
     </context-param>
+    <welcome-file-list>
+        <welcome-file>/content/index.xhtml</welcome-file>
+    </welcome-file-list>
 </web-app>

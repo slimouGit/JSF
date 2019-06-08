@@ -1,4 +1,5 @@
 import Enums.HE_List;
+import Properties.Properties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +28,10 @@ public class HappyEuro implements Serializable {
     private List<Position> he_bookList = new ArrayList<Position>();
     private List<Position> intakes = new ArrayList<Position>();
     private List<Position> outputs = new ArrayList<Position>();
+    private String name;
+
+//    @Inject
+//    private Properties properties;
 
     private String type;
     private String position;
@@ -49,6 +54,7 @@ public class HappyEuro implements Serializable {
 
     public List<HE_List> positionList(String enteredValue) {
         LOG.info("POS {}", enteredValue);
+        LOG.info("Miete {}", Properties.MIETE);
         List<HE_List> he_positions = new ArrayList<HE_List>();
         for (HE_List item : HE_List.values()) {
             if (item.toString().toLowerCase().startsWith(enteredValue.toLowerCase())) {
@@ -63,6 +69,7 @@ public class HappyEuro implements Serializable {
     public void displayDropdownValue() {
         LOG.info("Selected value {} ", HE_List.valueOf(positionDropdown).getPosition());
         setType(HE_List.valueOf(positionDropdown).getType().getTypeValue());
+
         FacesMessage msg;
         if (positionDropdown != null) {
             bookPosition(positionDropdown);
@@ -81,6 +88,8 @@ public class HappyEuro implements Serializable {
     public void displayAutoselectValue() {
         LOG.info("Selected value {} ", HE_List.valueOf(positionAuto).getPosition());
         setType(HE_List.valueOf(positionAuto).getType().getTypeValue());
+
+
         FacesMessage msg;
         if (positionAuto != null) {
             bookPosition(positionAuto);
@@ -110,6 +119,9 @@ public class HappyEuro implements Serializable {
 
     public void addPosition() {
         LOG.info("Position {}", this.type);
+        if(this.type.equalsIgnoreCase("Guthaben")){
+            this.setPosition("Konto");
+        }
         Position addedPosition = new Position(this.type,
                 this.position,
                 this.amount);
@@ -120,15 +132,22 @@ public class HappyEuro implements Serializable {
         setAmount(0);
     }
 
-    public boolean renderInput(){
+    public boolean handleBank(){
         boolean isVisible = true;
-        if(null!=this.position){
-            if(this.position.equalsIgnoreCase("Konto")){
+            if(this.type.equalsIgnoreCase("Guthaben")){
                 isVisible = false;
-            }
+                this.setPosition("Konto");
         }
         return isVisible;
     }
+
+    public String navigateTo(String retVal) {
+        String newUrl = retVal.concat("?faces-redirect=true&includeViewParams=true");
+        return newUrl;
+    }
+
+
+
 
 
 
@@ -195,5 +214,11 @@ public class HappyEuro implements Serializable {
         return outputs;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 }

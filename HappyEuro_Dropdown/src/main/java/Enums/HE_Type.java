@@ -7,7 +7,7 @@ package Enums;
 public enum HE_Type {
     OUT("Ausgabe"),
     IN("Einnahme"),
-    BANK("Konto");
+    BANK("Guthaben");
 
     private final String typeValue;
 
