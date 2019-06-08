@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:components="http://java.sun.com/jsf/composite/components"
+>
+<h:head>
+    <title>DummyProject</title>
+    <f:metadata>
+    </f:metadata>
+</h:head>
+<f:view>
+
+    <ui:insert name="header" >
+        <ui:include src="/template/header.xhtml" />
+    </ui:insert>
+
+        <components:componentOutputLabel labelValue="#{msg['headline.PROJECT_NAME']}" rendered="true"/>
+    <p:outputLabel value="#{dummyProject.projectTitle}"/>
+
+</f:view>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:composite="http://xmlns.jcp.org/jsf/composite"
+      xmlns:p="http://primefaces.org/ui"
+>
+
+<composite:interface>
+    <composite:attribute name="labelValue"/>
+</composite:interface>
+
+<composite:implementation>
+    <div>
+        <p:outputLabel value="#{cc.attrs.labelValue}"/>
+    </div>
+</composite:implementation>
+
+</html>
