@@ -11,14 +11,14 @@
 <h:head>
     <title>HappyEuro</title>
     <f:metadata>
-        <f:viewParam name="he" value="#{happyEuro.name}"/>
+        <f:viewParam name="he" value="#{saved.name}"/>
     </f:metadata>
 </h:head>
 <f:view>
-    <p:outputLabel value="Saved succesfully #{happyEuro.name}"></p:outputLabel>
+    <p:outputLabel value="content.Saved succesfully #{saved.name}"></p:outputLabel>
     <h:form>
         <components:componentButton buttonValue="Back"
-                                    buttonAction="#{happyEuro.navigateTo('index.xhtml')}"
+                                    buttonAction="#{saved.navigateTo('index.xhtml')}"
         />
     </h:form>
 </f:view>
