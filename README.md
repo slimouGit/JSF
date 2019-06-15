@@ -165,3 +165,23 @@ public class DummyProject implements Serializable {
 
 </html>
 
+14. add Tags
+XHTML FILE AS TAG:
+
+F:\git_repo\JSF\Dummy_Project\web\WEB-INF\tags\Header.xhtml
+TAGLIB.XML TO REGISTER EACH TAG:
+
+F:\git_repo\JSF\Dummy_Project\web\WEB-INF\dummy.taglib.xml
+<facelet-taglib xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facelettaglibrary_2_2.xsd" version="2.2"
+
+<namespace>http://dummy-project.de/facelets</namespace>
+<tag>
+    <tag-name>header</tag-name>
+    <source>tags/Header.xhtml</source>
+</tag>
+REGISTRY IN WEB.XML: facelets.LIBRARIES /WEB-INF/dummy.taglib.xml
+
+USE THE TAG IN VIEW:
+
+add namespace: xmlns:dummy-tag="http://dummy-project.de/facelets"
+insert tag: dummy-tag:header/
