@@ -17,11 +17,13 @@
 <f:view>
     <dummy-tag:header/>
 
+    <dummy-tag:label tagLabel="#{dummyProject.tagLabel}"/>
+
         <components:componentOutputLabel labelValue="#{msg['headline.PROJECT_NAME']}" rendered="true"/>
     <p:outputLabel value="#{dummyProject.projectTitle}"/>
 
     <ui:insert name="footer" >
-        <ui:include src="/template/Footer.xhtml" />
+        <ui:include src="/template/footer.xhtml" />
     </ui:insert>
 
 </f:view>

@@ -8,6 +8,10 @@
     <namespace>http://dummy-project.de/facelets</namespace>
     <tag>
         <tag-name>header</tag-name>
-        <source>tags/Header.xhtml</source>
+        <source>tags/header.xhtml</source>
+    </tag>
+    <tag>
+        <tag-name>label</tag-name>
+        <source>tags/label.xhtml</source>
     </tag>
 </facelet-taglib>
