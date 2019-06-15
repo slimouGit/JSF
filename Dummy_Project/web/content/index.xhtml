@@ -7,6 +7,7 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui"
       xmlns:components="http://java.sun.com/jsf/composite/components"
+      xmlns:dummy-tag="http://dummy-project.de/facelets"
 >
 <h:head>
     <title>DummyProject</title>
@@ -14,13 +15,14 @@
     </f:metadata>
 </h:head>
 <f:view>
-
-    <ui:insert name="header" >
-        <ui:include src="/template/header.xhtml" />
-    </ui:insert>
+    <dummy-tag:header/>
 
         <components:componentOutputLabel labelValue="#{msg['headline.PROJECT_NAME']}" rendered="true"/>
     <p:outputLabel value="#{dummyProject.projectTitle}"/>
+
+    <ui:insert name="footer" >
+        <ui:include src="/template/Footer.xhtml" />
+    </ui:insert>
 
 </f:view>
 </html>

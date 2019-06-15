@@ -19,4 +19,8 @@
     <welcome-file-list>
         <welcome-file>/content/index.xhtml</welcome-file>
     </welcome-file-list>
+    <context-param>
+        <param-name>facelets.LIBRARIES</param-name>
+        <param-value>/WEB-INF/dummy.taglib.xml</param-value>
+    </context-param>
 </web-app>
