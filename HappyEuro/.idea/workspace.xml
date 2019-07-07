@@ -7,11 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c17031-59b8-4d69-b7e5-0608b8552904" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_war_exploded.war/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_war_exploded.war/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/HappyEuro.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dummy_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dummy_Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/content/Saved.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/content/Saved.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/content/Saved.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/content/Saved.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -140,6 +139,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,8 +202,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,16 +365,17 @@
       <workItem from="1559465552622" duration="1133000" />
       <workItem from="1559920682205" duration="4396000" />
       <workItem from="1559972677940" duration="59000" />
+      <workItem from="1561739095168" duration="965000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43783000" />
+    <option name="totallyTimeSpent" value="44748000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="0" width="1547" height="1080" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2118359" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2145259" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
