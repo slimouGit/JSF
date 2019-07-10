@@ -9,8 +9,8 @@
 >
 
 <composite:interface>
-    <composite:attribute name="buttonValue"/>
-    <composite:attribute name="toUpdate"/>
+    <composite:attribute name="buttonValue" required="false"/>
+    <composite:attribute name="toUpdate" required="false"/>
     <composite:attribute name="renderCondition" required="false" default="true"/>
     <composite:attribute name="buttonAction" method-signature="java.lang.String action()"/>
 

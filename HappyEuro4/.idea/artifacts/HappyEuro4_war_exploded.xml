@@ -1,6 +1,9 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="HappyEuro4:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/HappyEuro4_war_exploded.war</output-path>
+    <properties id="ant-preprocessing">
+      <options enabled="true" />
+    </properties>
     <root id="root">
       <element id="javaee-facet-resources" facet="HappyEuro4/web/Web" />
       <element id="directory" name="WEB-INF">
@@ -10,6 +13,9 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="PrimeFaces-6.1" />
           <element id="library" level="project" name="Maven: org.primefaces:primefaces:6.1" />
+          <element id="library" level="project" name="Maven: com.itextpdf:layout:7.0.4" />
+          <element id="library" level="project" name="Maven: com.itextpdf:kernel:7.0.4" />
+          <element id="library" level="project" name="Maven: com.itextpdf:io:7.0.4" />
         </element>
       </element>
     </root>

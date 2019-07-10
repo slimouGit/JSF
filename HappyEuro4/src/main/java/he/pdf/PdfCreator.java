@@ -33,7 +33,26 @@ public class PdfCreator {
         Document document = new Document(pdf);
 
         //Add paragraph to the document
-        document.add(new Paragraph("Hello HappyEuro!"));
+        document.add(new Paragraph("Hello HappyEuro 4!"));
+
+        //Close document
+        document.close();
+    }
+
+    public void createHE() throws IOException {
+        //Initialize PDF writer
+
+        String DEST = "HappyEuro4.pdf";
+        PdfWriter writer = new PdfWriter(DEST);
+
+        //Initialize PDF document
+        PdfDocument pdf = new PdfDocument(writer);
+
+        // Initialize document
+        Document document = new Document(pdf);
+
+        //Add paragraph to the document
+        document.add(new Paragraph("HappyEuro 4!"));
 
         //Close document
         document.close();

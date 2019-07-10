@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facelet-taglib
+        xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facelettaglibrary_2_2.xsd"
+        version="2.2"
+>
+    <namespace>http://happyeuro.de/facelets</namespace>
+    <tag>
+        <tag-name>header</tag-name>
+        <source>tags/header.xhtml</source>
+    </tag>
+    <tag>
+        <tag-name>label</tag-name>
+        <source>tags/label.xhtml</source>
+    </tag>
+</facelet-taglib>
