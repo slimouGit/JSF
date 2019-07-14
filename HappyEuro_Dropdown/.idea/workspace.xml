@@ -7,23 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c3167da-3a28-48df-8c44-cef4fef7364f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/.idea/artifacts/HappyEuro4_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/.idea/artifacts/HappyEuro4_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dummy_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dummy_Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/documents/HappyEuro.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/classes/he/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/classes/he/HappyEuro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/classes/he/pdf/PdfCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/classes/he/pdf/PdfCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/classes/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/content/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/content/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/resources/components/componentButton.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/resources/components/componentButton.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/src/main/java/he/HappyEuro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/src/main/java/he/HappyEuro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/src/main/java/he/pdf/PdfCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/src/main/java/he/pdf/PdfCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/src/main/resources/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/target/classes/he/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/target/classes/he/HappyEuro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/target/classes/he/pdf/PdfCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/target/classes/he/pdf/PdfCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/target/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/target/classes/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/web/content/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/web/content/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro4/web/resources/components/componentButton.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/web/resources/components/componentButton.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,20 +37,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+              <caret line="120" selection-start-line="120" selection-end-line="120" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/content/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="22" />
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -100,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="714">
               <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="47" selection-end-column="21" />
             </state>
           </provider>
@@ -126,12 +111,12 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
+          <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
-          <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -222,6 +207,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -318,7 +304,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -515,17 +500,17 @@
       <workItem from="1562477689965" duration="564000" />
       <workItem from="1562478976693" duration="4088000" />
       <workItem from="1562501194998" duration="1188000" />
+      <workItem from="1563088473400" duration="205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70876000" />
+    <option name="totallyTimeSpent" value="71081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="97" width="1532" height="943" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27581522" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2798913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -742,6 +727,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Enums/HE_Type.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -771,24 +763,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/web/content/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="47" selection-end-column="21" />
+        <state relative-caret-position="170">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/content/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="22" />
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
         </state>
       </provider>
     </entry>
