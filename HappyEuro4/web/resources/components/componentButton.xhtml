@@ -11,6 +11,7 @@
 <composite:interface>
     <composite:attribute name="buttonValue" required="false"/>
     <composite:attribute name="toUpdate" required="false"/>
+    <composite:attribute name="toProcess" required="false"/>
     <composite:attribute name="renderCondition" required="false" default="true"/>
     <composite:attribute name="buttonAction" method-signature="java.lang.String action()"/>
 
@@ -18,7 +19,7 @@
 
 <composite:implementation>
     <p:commandButton value="#{cc.attrs.buttonValue}" update="#{cc.attrs.toUpdate}" rendered="#{cc.attrs.renderCondition}"
-                     action="#{cc.attrs.buttonAction}"/>
+                     action="#{cc.attrs.buttonAction}" process="#{cc.attrs.toProcess}" ajax="false"/>
 </composite:implementation>
 
 </html>

@@ -7,10 +7,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96c17031-59b8-4d69-b7e5-0608b8552904" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Dummy_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dummy_Project/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HappyEuro4/src/main/java/he/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/classes/he/AbstractHappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/classes/he/AbstractHappyEuro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/classes/he/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/classes/he/HappyEuro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/classes/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/tags/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/WEB-INF/tags/header.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/content/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/content/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/resources/components/componentButton.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/resources/components/componentButton.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/out/artifacts/HappyEuro4_war_exploded.war/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/src/main/java/he/AbstractHappyEuro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/src/main/java/he/AbstractHappyEuro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/src/main/java/he/HappyEuro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/src/main/java/he/HappyEuro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/src/main/resources/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/target/HappyEuro4-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/target/HappyEuro4-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/target/classes/he/AbstractHappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/target/classes/he/AbstractHappyEuro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/target/classes/he/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/target/classes/he/HappyEuro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/target/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/target/classes/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/web/WEB-INF/tags/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/web/WEB-INF/tags/header.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/web/content/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/web/content/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/web/resources/components/componentButton.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/web/resources/components/componentButton.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/web/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/web/resources/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/content/Saved.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/content/Saved.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/content/Saved.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/content/Saved.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/content/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/content/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/java/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/java/Position.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,11 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="99" selection-start-line="38" selection-start-column="99" selection-end-line="38" selection-end-column="99" />
+            <state relative-caret-position="153">
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -43,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="298">
+              <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -139,8 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,6 +223,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,16 +389,18 @@
       <workItem from="1559920682205" duration="4396000" />
       <workItem from="1559972677940" duration="59000" />
       <workItem from="1561739095168" duration="965000" />
+      <workItem from="1563114850972" duration="1861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44748000" />
+    <option name="totallyTimeSpent" value="46609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="0" width="1547" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2145259" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21721587" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -487,19 +512,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ENUM/HappyEuro_Positions.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/properties.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/java/AutoComplete.java" />
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="99" selection-start-line="38" selection-start-column="99" selection-end-line="38" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -523,8 +541,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="298">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="41" />
         </state>
       </provider>
     </entry>

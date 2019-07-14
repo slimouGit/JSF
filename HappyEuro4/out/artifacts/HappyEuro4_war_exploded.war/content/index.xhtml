@@ -13,16 +13,52 @@
 </h:head>
 <f:view>
     <he-tag:header/>
-    <ui:insert name="header">
-        <ui:include src="/template/header.xhtml"/>
-    </ui:insert>
 
     <h:form id="form">
+        <p:growl id="msgs" showDetail="true"/>
         <div>
             <p:outputLabel value="#{msg['headline.HE_START']}"/>
         </div>
-        <p:outputLabel value="#{happyEuro.projectName}"/>
 
+        <!--Eingabefeld-->
+        <p:outputLabel value="Position: "/>
+        <p:autoComplete value="#{happyEuro.position}" completeMethod="#{happyEuro.positionList}"/>
+
+        <components:componentButton buttonValue="#{msg['button.SUBMIT']}" toUpdate="form:msgs form:list"
+                                    buttonAction="#{happyEuro.submitPosition()}"/>
+
+        <!--Anzeige Daten-->
+        <ui:fragment id="list">
+
+            <ui:fragment rendered="#{not empty happyEuro.outputs}" >
+                <p:panel header="Ausgaben" class="marginTop20">
+                    <p:dataTable id="outcomeList" var="output" value="#{happyEuro.outputs}">
+                        <p:column headerText="Position">
+                            <h:outputText value="#{output.position}"/>
+                        </p:column>
+                        <p:column headerText="Betrag">
+                            <h:outputText value="#{output.amount}"/>
+                        </p:column>
+                    </p:dataTable>
+                </p:panel>
+            </ui:fragment>
+
+            <ui:fragment rendered="#{not empty happyEuro.intakes}">
+                <p:panel header="Einnahmen" class="marginTop20">
+                    <p:dataTable id="intakeList" var="intake" value="#{happyEuro.intakes}">
+                        <p:column headerText="Position">
+                            <h:outputText value="#{intake.position}"/>
+                        </p:column>
+                        <p:column headerText="Betrag">
+                            <h:outputText value="#{intake.amount}"/>
+                        </p:column>
+                    </p:dataTable>
+                </p:panel>
+            </ui:fragment>
+
+        </ui:fragment>
+
+        <!--PDF generieren-->
         <ui:remove>
             <components:componentButton buttonValue="#{msg['button.PDF']}"
                                         buttonAction="#{happyEuro.generatePdf()}"/>
