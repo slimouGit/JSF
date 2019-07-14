@@ -5,3 +5,7 @@ body{
 .marginTop20{
     margin-top: 20px;
 }
+
+#list .ui-panel-titlebar .ui-widget-header .ui-helper-clearfix .ui-corner-all{
+    background: cyan !important;
+}

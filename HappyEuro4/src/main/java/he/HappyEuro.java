@@ -75,11 +75,20 @@ public class HappyEuro extends AbstractHappyEuro {
      * @param position
      */
     private void bookPosition(String position) {
-        
+
         Position positionToBook = new Position(HE_List.valueOf(position).getType().getTypeValue(),
                 HE_List.valueOf(position).getPosition(),
                 HE_List.valueOf(position).getAmount());
 
+        handlePosition(position, positionToBook);
+    }
+
+    /**
+     * 
+     * @param position
+     * @param positionToBook
+     */
+    private void handlePosition(String position, Position positionToBook) {
         if(HE_List.valueOf(position).getType().getTypeValue().equalsIgnoreCase(HE_Type.OUT.getTypeValue())){
             this.outputs.add(positionToBook);
         }
