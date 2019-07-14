@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e3fb0de-2e3e-4af4-bcd3-19967b4eb69c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/web/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/he/HappyEuro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/he/HappyEuro.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,20 +40,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/he/HappyEuro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="127" selection-start-line="127" selection-end-line="127" />
+            <state relative-caret-position="220">
+              <caret line="88" column="28" lean-forward="true" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/resources/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="102">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -89,10 +89,10 @@
         <option value="$PROJECT_DIR$/src/main/java/he/Position.java" />
         <option value="$PROJECT_DIR$/src/main/java/he/FIXED_DATA/HE_List.java" />
         <option value="$PROJECT_DIR$/src/main/java/he/BookPosition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/he/HappyEuro.java" />
         <option value="$PROJECT_DIR$/web/resources/components/componentButton.xhtml" />
         <option value="$PROJECT_DIR$/web/content/index.xhtml" />
         <option value="$PROJECT_DIR$/web/resources/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/he/HappyEuro.java" />
       </list>
     </option>
   </component>
@@ -446,12 +446,12 @@
       <workItem from="1562501093370" duration="3772000" />
       <workItem from="1562779008235" duration="2434000" />
       <workItem from="1563088684114" duration="759000" />
-      <workItem from="1563111457754" duration="6852000" />
+      <workItem from="1563111457754" duration="7132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18546000" />
+    <option name="totallyTimeSpent" value="18826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="86" y="1" width="1668" height="943" extended-state="0" />
@@ -692,13 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/he/HappyEuro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/components/componentButton.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -715,8 +708,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/he/HappyEuro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="88" column="28" lean-forward="true" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
         </state>
       </provider>
     </entry>
