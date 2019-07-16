@@ -41,18 +41,36 @@
                         </p:column>
                     </p:dataTable>
                 </p:panel>
+                <p:panel header="Gesamtausgaben" class="marginTop20">
+                        <p:column>
+                            <h:outputText value="#{happyEuro.outputsAmount}"/>
+                        </p:column>
+                </p:panel>
             </ui:fragment>
 
             <ui:fragment rendered="#{not empty happyEuro.intakes}">
-                <p:panel header="Einnahmen" class="marginTop20">
-                    <p:dataTable id="intakeList" var="intake" value="#{happyEuro.intakes}">
-                        <p:column headerText="Position">
-                            <h:outputText value="#{intake.position}"/>
-                        </p:column>
-                        <p:column headerText="Betrag">
-                            <h:outputText value="#{intake.amount}"/>
-                        </p:column>
-                    </p:dataTable>
+            <p:panel header="Einnahmen" class="marginTop20">
+                <p:dataTable id="intakeList" var="intake" value="#{happyEuro.intakes}">
+                    <p:column headerText="Position">
+                        <h:outputText value="#{intake.position}"/>
+                    </p:column>
+                    <p:column headerText="Betrag">
+                        <h:outputText value="#{intake.amount}"/>
+                    </p:column>
+                </p:dataTable>
+            </p:panel>
+            <p:panel header="Gesamteinnahmen" class="marginTop20">
+                <p:column>
+                    <h:outputText value="#{happyEuro.intakeAmount}"/>
+                </p:column>
+            </p:panel>
+        </ui:fragment>
+
+            <ui:fragment rendered="#{not empty happyEuro.result}">
+                <p:panel header="Guthaben Gesamt" class="marginTop20">
+                    <p:column>
+                        <h:outputText value="#{happyEuro.result}"/>
+                    </p:column>
                 </p:panel>
             </ui:fragment>
 

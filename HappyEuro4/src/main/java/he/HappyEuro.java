@@ -23,8 +23,11 @@ public class HappyEuro extends AbstractHappyEuro {
     private String projectName;
     private String position;
     private List<Position> intakes = new ArrayList<Position>();
+    private double intakeAmount = 0.0;
     private List<Position> outputs = new ArrayList<Position>();
-    private double bankAmount;
+    private double outputsAmount = 0.0;
+    private double bankAmount = 0.0;
+    private double result = 0.0;
 
     @PostConstruct
     public void init() {
@@ -80,24 +83,30 @@ public class HappyEuro extends AbstractHappyEuro {
                 HE_List.valueOf(position).getPosition(),
                 HE_List.valueOf(position).getAmount());
 
-        handlePosition(HE_List.valueOf(position).getType().getTypeValue(), positionToBook);
+        handlePosition(positionToBook);
     }
 
     /**
-     *
-     * @param type
      * @param positionToBook
      */
-    private void handlePosition(String type, Position positionToBook) {
-        if(type.equalsIgnoreCase(HE_Type.OUT.getTypeValue())){
+    private void handlePosition(Position positionToBook) {
+        String positionType = positionToBook.getType();
+        if(positionType.equalsIgnoreCase(HE_Type.OUT.getTypeValue())){
             this.outputs.add(positionToBook);
+            this.outputsAmount += positionToBook.getAmount();
         }
-        if(type.equalsIgnoreCase(HE_Type.IN.getTypeValue())){
+        if(positionType.equalsIgnoreCase(HE_Type.IN.getTypeValue())){
             this.intakes.add(positionToBook);
+            this.intakeAmount += positionToBook.getAmount();
         }
-        if(type.equalsIgnoreCase(HE_Type.BANK.getTypeValue())){
+        if(positionType.equalsIgnoreCase(HE_Type.BANK.getTypeValue())){
             this.bankAmount = positionToBook.getAmount();
         }
+        calculateResult();
+    }
+
+    private void calculateResult() {
+        this.result = (this.bankAmount + this.intakeAmount) - this.outputsAmount;
     }
 
 
@@ -147,5 +156,25 @@ public class HappyEuro extends AbstractHappyEuro {
 
     public void setBankAmount(double bankAmount) {
         this.bankAmount = bankAmount;
+    }
+
+    public double getIntakeAmount() {
+        return intakeAmount;
+    }
+
+    public void setIntakeAmount(double intakeAmount) {
+        this.intakeAmount = intakeAmount;
+    }
+
+    public double getOutputsAmount() {
+        return outputsAmount;
+    }
+
+    public void setOutputsAmount(double outputsAmount) {
+        this.outputsAmount = outputsAmount;
+    }
+
+    public double getResult() {
+        return result;
     }
 }
