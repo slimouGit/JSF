@@ -22,15 +22,33 @@
 
         <!--Eingabefeld-->
         <p:outputLabel value="Position: "/>
-        <p:autoComplete value="#{happyEuro.position}" completeMethod="#{happyEuro.positionList}"/>
+        <p:autoComplete id="positionInput" value="#{happyEuro.position}" completeMethod="#{happyEuro.positionList}">
+            <p:ajax event="keyup" listener="#{happyEuro.inputListener}"
+                    update="@form"/>
+        </p:autoComplete>
 
-        <components:componentButton buttonValue="#{msg['button.SUBMIT']}" toUpdate="form:msgs form:list"
+        <ui:remove>
+            <components:componentAutocomplete
+                    labelValue="Position"
+                    componentId="positionInput"
+                    inputValue="#{happyEuro.position}"
+                    autoContent="#{happyEuro.positionList}"
+                    listenerMethod="keyup"
+                    listenerTarget="#{happyEuro.inputListener()}"
+                    toUpdate="form:positionButton"
+            />
+        </ui:remove>
+
+
+        <components:componentButton id="positionButton" buttonValue="#{msg['button.SUBMIT']}"
+                                    toUpdate="form:msgs form:list"
+                                    renderCondition="#{happyEuro.enableButton}"
                                     buttonAction="#{happyEuro.submitPosition()}"/>
 
         <!--Anzeige Daten-->
         <ui:fragment id="list">
 
-            <ui:fragment rendered="#{not empty happyEuro.outputs}" >
+            <ui:fragment rendered="#{not empty happyEuro.outputs}">
                 <p:panel header="Ausgaben" class="marginTop20">
                     <p:dataTable id="outcomeList" var="output" value="#{happyEuro.outputs}">
                         <p:column headerText="Position">
@@ -42,29 +60,29 @@
                     </p:dataTable>
                 </p:panel>
                 <p:panel header="Gesamtausgaben" class="marginTop20">
-                        <p:column>
-                            <h:outputText value="#{happyEuro.outputsAmount}"/>
-                        </p:column>
+                    <p:column>
+                        <h:outputText value="#{happyEuro.outputsAmount}"/>
+                    </p:column>
                 </p:panel>
             </ui:fragment>
 
             <ui:fragment rendered="#{not empty happyEuro.intakes}">
-            <p:panel header="Einnahmen" class="marginTop20">
-                <p:dataTable id="intakeList" var="intake" value="#{happyEuro.intakes}">
-                    <p:column headerText="Position">
-                        <h:outputText value="#{intake.position}"/>
+                <p:panel header="Einnahmen" class="marginTop20">
+                    <p:dataTable id="intakeList" var="intake" value="#{happyEuro.intakes}">
+                        <p:column headerText="Position">
+                            <h:outputText value="#{intake.position}"/>
+                        </p:column>
+                        <p:column headerText="Betrag">
+                            <h:outputText value="#{intake.amount}"/>
+                        </p:column>
+                    </p:dataTable>
+                </p:panel>
+                <p:panel header="Gesamteinnahmen" class="marginTop20">
+                    <p:column>
+                        <h:outputText value="#{happyEuro.intakeAmount}"/>
                     </p:column>
-                    <p:column headerText="Betrag">
-                        <h:outputText value="#{intake.amount}"/>
-                    </p:column>
-                </p:dataTable>
-            </p:panel>
-            <p:panel header="Gesamteinnahmen" class="marginTop20">
-                <p:column>
-                    <h:outputText value="#{happyEuro.intakeAmount}"/>
-                </p:column>
-            </p:panel>
-        </ui:fragment>
+                </p:panel>
+            </ui:fragment>
 
             <ui:fragment rendered="#{not empty happyEuro.result}">
                 <p:panel header="Guthaben Gesamt" class="marginTop20">

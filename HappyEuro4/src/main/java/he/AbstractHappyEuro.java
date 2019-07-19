@@ -9,4 +9,6 @@ public class AbstractHappyEuro implements Serializable {
     public void init() {
 
     }
+
+
 }

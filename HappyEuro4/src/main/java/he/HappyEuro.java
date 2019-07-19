@@ -14,6 +14,7 @@ import javax.inject.Named;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Named
 @ViewScoped
@@ -28,6 +29,7 @@ public class HappyEuro extends AbstractHappyEuro {
     private double outputsAmount = 0.0;
     private double bankAmount = 0.0;
     private double result = 0.0;
+    private boolean enableButton;
 
     @PostConstruct
     public void init() {
@@ -59,7 +61,6 @@ public class HappyEuro extends AbstractHappyEuro {
         if (position != null) {
             //Eintrag zur Verarbeitung weiterreichen
             bookPosition(position);
-
             //Erfolgsnachricht ausgeben
             msg = new FacesMessage("Position", HE_List.valueOf(position).getType().getTypeValue()
                     + " " + HE_List.valueOf(position).getPosition()
@@ -75,6 +76,7 @@ public class HappyEuro extends AbstractHappyEuro {
 
     /**
      * Eintrag verarbeiten
+     *
      * @param position
      */
     private void bookPosition(String position) {
@@ -91,15 +93,15 @@ public class HappyEuro extends AbstractHappyEuro {
      */
     private void handlePosition(Position positionToBook) {
         String positionType = positionToBook.getType();
-        if(positionType.equalsIgnoreCase(HE_Type.OUT.getTypeValue())){
+        if (positionType.equalsIgnoreCase(HE_Type.OUT.getTypeValue())) {
             this.outputs.add(positionToBook);
             this.outputsAmount += positionToBook.getAmount();
         }
-        if(positionType.equalsIgnoreCase(HE_Type.IN.getTypeValue())){
+        if (positionType.equalsIgnoreCase(HE_Type.IN.getTypeValue())) {
             this.intakes.add(positionToBook);
             this.intakeAmount += positionToBook.getAmount();
         }
-        if(positionType.equalsIgnoreCase(HE_Type.BANK.getTypeValue())){
+        if (positionType.equalsIgnoreCase(HE_Type.BANK.getTypeValue())) {
             this.bankAmount = positionToBook.getAmount();
         }
         calculateResult();
@@ -111,7 +113,24 @@ public class HappyEuro extends AbstractHappyEuro {
 
 
     /**
+     * Listener
+     */
+    public void inputListener() {
+        Optional<String> inputVal = Optional.ofNullable(this.getPosition());
+        if (inputVal.isPresent()) {if (this.getPosition().length() > 0) {
+            this.enableButton = true;
+            } else {
+                this.enableButton = false;
+            }
+        } else {
+            this.enableButton = false;
+        }
+    }
+
+
+    /**
      * PDF generieren
+     *
      * @throws IOException
      */
     public void generatePdf() throws IOException {
@@ -176,5 +195,9 @@ public class HappyEuro extends AbstractHappyEuro {
 
     public double getResult() {
         return result;
+    }
+
+    public boolean isEnableButton() {
+        return enableButton;
     }
 }
