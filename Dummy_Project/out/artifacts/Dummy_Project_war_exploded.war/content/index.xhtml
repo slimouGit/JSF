@@ -19,11 +19,23 @@
 
     <dummy-tag:label tagLabel="#{dummyProject.tagLabel}"/>
 
-        <components:componentOutputLabel labelValue="#{msg['headline.PROJECT_NAME']}" rendered="true"/>
-    <p:outputLabel value="#{dummyProject.projectTitle}"/>
 
-    <ui:insert name="footer" >
-        <ui:include src="/template/footer.xhtml" />
+    <p:outputLabel value="#{dummyProject.projectTitle}"/>
+    <components:componentOutputLabel labelValue="#{msg['headline.PROJECT_NAME']}" rendered="true"/>
+    <h:form>
+
+
+        <h:panelGrid columns="2" cellpadding="5">
+            <p:outputLabel for="popup" value="Popup:"/>
+            <p:calendar pattern="yyyy-mm-dd" id="popup" value="#{dummyProject.validity}"/>
+
+            <p:commandButton value="Submit" action="#{dummyProject.readValidity}" >
+            </p:commandButton>
+        </h:panelGrid>
+
+    </h:form>
+    <ui:insert name="footer">
+        <ui:include src="/template/footer.xhtml"/>
     </ui:insert>
 
 </f:view>
