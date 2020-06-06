@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+>
+<h:head>
+    <title>DummyProject</title>
+    <f:metadata>
+    </f:metadata>
+</h:head>
+<f:view>
+
+    <p:commandButton type="button" onclick="PF('confirmDialog').show();" value="Gewerbebetrieb abmelden"/>
+    <p:confirmDialog message="Zu welchen Zeitpunkt soll dieser Gewerbebetrieb abgemeldet werden?" header="Abmeldung Gewerbebetrieb"
+                     widgetVar="confirmDialog" id="confirmDialog">
+
+            <h:panelGrid columns="3" cellpadding="5">
+                <p:outputLabel for="abmeldeDatum" value="Abmeldedatum:"/>
+                <p:calendar pattern="dd.MM.yyyy"  id="abmeldeDatum" mask="true" value="#{calenderDialog.validity}"
+                            maxdate="today"
+                            required="true" requiredMessage="Geben Sie ein Abmeldedatum an." >
+                    <p:ajax event="dateSelect" update="abmeldeButtonInDialog" process="@this"
+                            listener="#{calenderDialog.setValidity(calenderDialog.validity)}"/>
+                    <p:ajax event="change" update="abmeldeButtonInDialog" process="@this" listener="#{calenderDialog.setValidity(calenderDialog.validity)}"/>
+                </p:calendar>
+                <p:commandButton id="abmeldeButtonInDialog" value="abmelden"
+                                 actionListener="#{calenderDialog.abmelden}"
+                                 process="@this" update="confirmDialog"
+                                 disabled="#{empty calenderDialog.validity}"
+                                 ajax="false" validateClient="true">
+                    <p:message id="message" for="abmeldeDatum"/>
+                </p:commandButton>
+            </h:panelGrid>
+
+    </p:confirmDialog>
+
+</f:view>
+</html>

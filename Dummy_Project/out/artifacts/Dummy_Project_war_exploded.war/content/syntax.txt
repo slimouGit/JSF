@@ -1,0 +1,40 @@
+                                 oncomplete="if(args &amp;&amp; args.validationFailed) PF('confirmDialog').show()"
+<p:commandButton value="Submit" actionListener="#{calenderDialog.readValidity}"
+                                 oncomplete="if (!args.validationFailed &amp;&amp; args.saved) confirmDialog.hide();"
+                                       ajax="false" validateClient="true" >
+
+
+
+
+                                       <h:panelGrid columns="2" cellpadding="5">
+                                                       <p:outputLabel for="datum" value="Popup:"/>
+                                                       <p:calendar pattern="yyyy-mm-dd" id="datum" value="#{calenderDialog.validity}" required="true"/>
+                                                       <p:commandButton value="Submit" actionListener="#{calenderDialog.readValidity}"
+                                                                        oncomplete="if (!args.validationFailed &amp;&amp; args.saved) confirmDialog.hide();"
+                                                                        ajax="false" validateClient="true">
+                                                           <p:message for="datum"/>
+                                                           <h:outputText value="#{calenderDialog.text}"/>
+                                                       </p:commandButton>
+                                                   </h:panelGrid>
+
+
+                                                       <p:ajax event="dateSelect" update="abmeldeButton" listener="#{calenderDialog.dateListener}"/>
+                                                                   <p:ajax event="focus" update="abmeldeButton" listener="#{calenderDialog.dateListener}"/>
+                                                                   <p:ajax event="change" update="abmeldeButton" listener="#{calenderDialog.dateListener}"/>
+                                                                   <p:ajax event="blur" update="abmeldeButton" listener="#{calenderDialog.dateListener}"/>
+                                                                   <p:ajax event="keyup" update="abmeldeButton" listener="#{calenderDialog.dateListener}"/>
+
+
+                                                                      <h:panelGrid columns="4" cellpadding="5">
+                                                                               <p:outputLabel for="datum" value="Abmelden"/>
+                                                                               <p:calendar pattern="dd.mm.yyyy" id="datum" mask="true" value="#{calenderDialog.validity}"
+                                                                                           required="true">
+                                                                                   <p:ajax event="dateSelect" update="abmeldeButton" listener="#{calenderDialog.abmeldeListener}"/>
+                                                                                   <p:ajax event="change" update="abmeldeButton" listener="#{calenderDialog.abmeldeListener}"/>
+                                                                               </p:calendar>
+                                                                               <p:commandButton id="abmeldeButton" value="Abmelden" actionListener="#{calenderDialog.abmelden}"
+                                                                                                process="@this" update="@form" disabled="#{empty calenderDialog.validity}"
+                                                                                                partialSubmit="true" validateClient="true">
+                                                                               </p:commandButton>
+                                                                               <p:message id="message2" for="datum"/>
+                                                                           </h:panelGrid>
