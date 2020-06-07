@@ -10,27 +10,20 @@ import java.util.Date;
 @ViewScoped
 public class CalenderDialog implements Serializable {
 
-    private Date validity;
+    private Date abmeldeDatum;
     private String text;
 
     public void abmelden() {
-        Date validity = this.validity;
+        Date validity = this.abmeldeDatum;
         System.out.println("Validity: " + validity);
     }
 
-    public Date getValidity() {
-        return validity;
+    public Date getAbmeldeDatum() {
+        return abmeldeDatum;
     }
 
-    public void setValidity(Date validity) {
-        this.validity = validity;
+    public void setAbmeldeDatum(Date abmeldeDatum) {
+        this.abmeldeDatum = abmeldeDatum;
     }
 
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
 }

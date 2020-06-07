@@ -21,10 +21,10 @@
 
     <p:outputLabel value="#{dummyProject.projectTitle}"/>
     <components:componentOutputLabel labelValue="#{msg['headline.PROJECT_NAME']}" rendered="true"/>
-        <h:form>
 
-        <ui:include src="calenderDialog.xhtml"/>
-        </h:form>
+    <h:form>
+        <components:abmeldeKomponente pageBean="#{calenderDialog}" renderCondition="true" buttonLabel="" info="" />
+    </h:form>
 
     <ui:insert name="footer">
         <ui:include src="/template/footer.xhtml"/>

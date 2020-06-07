@@ -19,17 +19,17 @@
 
             <h:panelGrid columns="3" cellpadding="5">
                 <p:outputLabel for="abmeldeDatum" value="Abmeldedatum:"/>
-                <p:calendar pattern="dd.MM.yyyy"  id="abmeldeDatum" mask="true" value="#{calenderDialog.validity}"
+                <p:calendar pattern="dd.MM.yyyy" id="abmeldeDatum" mask="true" value="#{calenderDialog.abmeldeDatum}"
                             maxdate="today"
                             required="true" requiredMessage="Geben Sie ein Abmeldedatum an." >
                     <p:ajax event="dateSelect" update="abmeldeButtonInDialog" process="@this"
-                            listener="#{calenderDialog.setValidity(calenderDialog.validity)}"/>
-                    <p:ajax event="change" update="abmeldeButtonInDialog" process="@this" listener="#{calenderDialog.setValidity(calenderDialog.validity)}"/>
+                            listener="#{calenderDialog.setAbmeldeDatum(calenderDialog.abmeldeDatum)}"/>
+                    <p:ajax event="change" update="abmeldeButtonInDialog" process="@this" listener="#{calenderDialog.setAbmeldeDatum(calenderDialog.abmeldeDatum)}"/>
                 </p:calendar>
                 <p:commandButton id="abmeldeButtonInDialog" value="abmelden"
                                  actionListener="#{calenderDialog.abmelden}"
                                  process="@this" update="confirmDialog"
-                                 disabled="#{empty calenderDialog.validity}"
+                                 disabled="#{empty calenderDialog.abmeldeDatum}"
                                  ajax="false" validateClient="true">
                     <p:message id="message" for="abmeldeDatum"/>
                 </p:commandButton>
