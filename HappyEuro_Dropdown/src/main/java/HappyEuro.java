@@ -1,5 +1,4 @@
 import Enums.HE_List;
-import Properties.Properties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -36,6 +35,7 @@ public class HappyEuro implements Serializable {
     private String type;
     private String position;
     private double amount;
+    private List<String> fruitList = new ArrayList<String>();
 
     @PostConstruct
     public void init() {
@@ -50,13 +50,16 @@ public class HappyEuro implements Serializable {
         positions.add(HE_List.OUTPUT);
         positions.add(HE_List.INTAKE);
         positions.add(HE_List.BANK);
+
+        fruitList.add("Apfel");
+        fruitList.add("Birne");
+        fruitList.add("Kirsche");
+        fruitList.add("Banane");
     }
 
-    public List<HE_List> positionList(String enteredValue) {
-        LOG.info("POS {}", enteredValue);
-        LOG.info("Miete {}", Properties.MIETE);
-        List<HE_List> he_positions = new ArrayList<HE_List>();
-        for (HE_List item : HE_List.values()) {
+    public List<String> positionList(String enteredValue) {
+        List<String> he_positions = new ArrayList<String>();
+        for (String item : this.fruitList) {
             if (item.toString().toLowerCase().startsWith(enteredValue.toLowerCase())) {
                 he_positions.add(item);
             }
@@ -84,6 +87,8 @@ public class HappyEuro implements Serializable {
         }
         FacesContext.getCurrentInstance().addMessage(null, msg);
     }
+
+
 
     public void displayAutoselectValue() {
         LOG.info("Selected value {} ", HE_List.valueOf(positionAuto).getPosition());

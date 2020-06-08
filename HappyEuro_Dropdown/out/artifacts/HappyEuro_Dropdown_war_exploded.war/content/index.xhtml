@@ -36,7 +36,7 @@
                                             buttonAction="#{happyEuro.displayDropdownValue()}"/>
 
                 <p:outputLabel value="Position: "/>
-                <p:autoComplete value="#{happyEuro.position}" completeMethod="#{happyEuro.positionList}"/>
+                <p:autoComplete value="#{happyEuro.positionAuto}" completeMethod="#{happyEuro.positionList}"/>
 
                 <components:componentButton buttonValue="#{msg['button.SUBMIT']}" toUpdate="form:msgs form:positionList"
                                             buttonAction="#{happyEuro.displayAutoselectValue()}"/>
