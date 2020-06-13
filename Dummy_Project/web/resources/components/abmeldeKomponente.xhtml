@@ -16,41 +16,43 @@
 </composite:interface>
 
 <composite:implementation>
+    <div>
 
-    <ui:fragment rendered="#{cc.attrs.renderCondition}">
-        <p:commandButton type="button" onclick="PF('confirmDialog').show();" value="Gewerbebetrieb abmelden"/>
-        <p:confirmDialog message="Zu welchen Zeitpunkt soll dieser Gewerbebetrieb abgemeldet werden?"
-                         header="Abmeldung Gewerbebetrieb"
-                         widgetVar="confirmDialog" id="confirmDialog">
+        <ui:fragment rendered="#{cc.attrs.renderCondition}">
+            <p:commandButton type="button" onclick="PF('confirmDialog').show();" value="Gewerbebetrieb abmelden"/>
+            <p:confirmDialog message="Zu welchen Zeitpunkt soll dieser Gewerbebetrieb abgemeldet werden?"
+                             header="Abmeldung Gewerbebetrieb"
+                             widgetVar="confirmDialog" id="confirmDialog">
 
-            <h:panelGrid columns="2" cellpadding="5">
-                <p:outputLabel for="abmeldeDatum" value="Abmeldedatum:"/>
-                <p:calendar pattern="dd.MM.yyyy" id="abmeldeDatum" mask="true" value="#{cc.attrs.pageBean.abmeldeDatum}"
-                            maxdate="today"
-                            required="true" requiredMessage="Geben Sie ein Abmeldedatum an."
-                            yearRange="c-5:c+50">
-                    <p:ajax event="dateSelect" update="abmeldeButtonInDialog"
-                            listener="#{cc.attrs.pageBean.setAbmeldeDatum(cc.attrs.pageBean.abmeldeDatum)}"/>
-                    <p:ajax event="change" update="abmeldeButtonInDialog"
-                            listener="#{cc.attrs.pageBean.setAbmeldeDatum(cc.attrs.pageBean.abmeldeDatum)}"/>
-                </p:calendar>
-                <p:commandButton id="abmeldeButtonInDialog" value="abmelden"
-                                 actionListener="#{cc.attrs.pageBean.abmelden}"
-                                 process="@this" update="confirmDialog"
-                                 disabled="#{empty cc.attrs.pageBean.abmeldeDatum}"
-                                 ajax="false" validateClient="true">
-                    <p:message id="message" for="abmeldeDatum"/>
-                </p:commandButton>
-                <p:commandButton value="Abbrechen"
-                                 onclick="PF('confirmDialog').hide()"
-                                 update="@form"
-                                 process="@this"
-                />
-            </h:panelGrid>
+                <h:panelGrid columns="2" cellpadding="5">
+                    <p:outputLabel for="abmeldeDatum" value="Abmeldedatum:"/>
+                    <p:calendar pattern="dd.MM.yyyy" id="abmeldeDatum" mask="true"
+                                value="#{cc.attrs.pageBean.abmeldeDatum}"
+                                maxdate="today"
+                                required="true" requiredMessage="Geben Sie ein Abmeldedatum an."
+                                yearRange="c-5:c+50">
+                        <p:ajax event="dateSelect" update="abmeldeButtonInDialog"
+                                listener="#{cc.attrs.pageBean.setAbmeldeDatum(cc.attrs.pageBean.abmeldeDatum)}"/>
+                        <p:ajax event="change" update="abmeldeButtonInDialog"
+                                listener="#{cc.attrs.pageBean.setAbmeldeDatum(cc.attrs.pageBean.abmeldeDatum)}"/>
+                    </p:calendar>
+                    <p:commandButton id="abmeldeButtonInDialog" value="abmelden"
+                                     actionListener="#{cc.attrs.pageBean.abmelden}"
+                                     process="@this" update="confirmDialog"
+                                     disabled="#{empty cc.attrs.pageBean.abmeldeDatum}"
+                                     ajax="false" validateClient="true">
+                        <p:message id="message" for="abmeldeDatum"/>
+                    </p:commandButton>
+                    <p:commandButton value="Abbrechen"
+                                     onclick="PF('confirmDialog').hide()"
+                                     update="@form"
+                                     process="@this"
+                    />
+                </h:panelGrid>
 
-        </p:confirmDialog>
-    </ui:fragment>
-
+            </p:confirmDialog>
+        </ui:fragment>
+    </div>
 </composite:implementation>
 
 </html>

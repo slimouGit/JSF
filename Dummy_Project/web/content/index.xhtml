@@ -23,7 +23,10 @@
     <components:componentOutputLabel labelValue="#{msg['headline.PROJECT_NAME']}" rendered="true"/>
 
     <h:form>
-        <components:abmeldeKomponente pageBean="#{calenderDialog}" renderCondition="true" buttonLabel="" info="" />
+        <components:abmeldeKomponente pageBean="#{calenderDialog}" renderCondition="true" buttonLabel="" info=""/>
+
+        <components:autocompleteKomponente pageBean="#{autoComplete}"/>
+
     </h:form>
 
     <ui:insert name="footer">

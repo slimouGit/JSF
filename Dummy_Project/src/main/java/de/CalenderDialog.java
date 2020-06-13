@@ -11,7 +11,6 @@ import java.util.Date;
 public class CalenderDialog implements Serializable {
 
     private Date abmeldeDatum;
-    private String text;
 
     public void abmelden() {
         Date validity = this.abmeldeDatum;
