@@ -29,6 +29,10 @@
 
     </h:form>
 
+    <h:form>
+        <p:commandButton value="Charts" update="form" ajax="false" process="@this" action="#{dummyProject.redirect()}"/>
+    </h:form>
+
     <ui:insert name="footer">
         <ui:include src="/template/footer.xhtml"/>
     </ui:insert>

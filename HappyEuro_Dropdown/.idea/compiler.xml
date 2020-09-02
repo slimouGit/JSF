@@ -9,7 +9,7 @@
         <module name="HappyEuro_Dropdown" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
+    <bytecodeTargetLevel>
       <module name="HappyEuro_Dropdown" target="1.5" />
     </bytecodeTargetLevel>
   </component>

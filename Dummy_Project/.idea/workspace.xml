@@ -7,26 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="941b3880-2f10-4b98-9b88-775f9b9018b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/AutoComplete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/Behoerde.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/components/autocompleteKomponente.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/resources/components/componentButton.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/charts/Charts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/content/charts/charts.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/WEB-INF/classes/de/CalenderDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/WEB-INF/classes/de/CalenderDialog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/WEB-INF/classes/de/DummyProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/WEB-INF/classes/de/DummyProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/content/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/content/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/resources/components/abmeldeKomponente.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/resources/components/abmeldeKomponente.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/CalenderDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/CalenderDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/DummyProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/DummyProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Dummy_Project-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Dummy_Project-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/CalenderDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/CalenderDialog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/DummyProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/DummyProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/content/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/content/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/components/abmeldeKomponente.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/components/abmeldeKomponente.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/.idea/compiler.xml" afterDir="false" />
@@ -38,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Properties/Properties.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Properties/Properties.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/content/Saved.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/content/Saved.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/content/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/out/artifacts/HappyEuro_Dropdown_war_exploded.war/content/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/java/HappyEuro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/src/main/java/HappyEuro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/HappyEuro_Dropdown-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/HappyEuro_Dropdown-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro_Dropdown/target/classes/HappyEuro.class" afterDir="false" />
@@ -57,64 +43,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/content/calenderDialog.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="26" column="160" selection-start-line="26" selection-start-column="160" selection-end-line="26" selection-end-column="160" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/resources/components/autocompleteKomponente.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="384">
               <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/AutoComplete.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="53" column="79" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/CalenderDialog.java">
+        <entry file="file://$PROJECT_DIR$/web/content/charts/charts.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="248">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/components/abmeldeKomponente.xhtml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/charts/Charts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="36" column="113" selection-start-line="35" selection-start-column="24" selection-end-line="36" selection-end-column="113" />
+            <state relative-caret-position="353">
+              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/Behoerde.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/DummyProject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="156">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/content/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="299">
+              <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -133,6 +110,8 @@
     <findStrings>
       <find>display</find>
       <find>datum</find>
+      <find>pieModel1</find>
+      <find>Simple</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,12 +136,14 @@
         <option value="$PROJECT_DIR$/web/content/syntax.txt" />
         <option value="$PROJECT_DIR$/web/content/calenderDialog.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/de/Behoerde.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/DummyProject.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/CalenderDialog.java" />
         <option value="$PROJECT_DIR$/web/resources/components/abmeldeKomponente.xhtml" />
         <option value="$PROJECT_DIR$/web/resources/components/autocompleteKomponente.xhtml" />
-        <option value="$PROJECT_DIR$/web/content/index.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/de/AutoComplete.java" />
+        <option value="$PROJECT_DIR$/web/content/charts/charts.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/de/charts/Charts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/DummyProject.java" />
+        <option value="$PROJECT_DIR$/web/content/index.xhtml" />
       </list>
     </option>
   </component>
@@ -182,9 +163,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="62" />
-    <option name="y" value="67" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="91" />
+    <option name="y" value="105" />
     <option name="width" value="1767" />
     <option name="height" value="958" />
   </component>
@@ -296,7 +277,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/resources/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/content/charts" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -306,19 +287,19 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\git_repo\JSF\Dummy_Project\web\resources\components" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\git_repo\JSF\Dummy_Project\web\WEB-INF" />
       <recent name="F:\git_repo\JSF\Dummy_Project\web\content" />
-      <recent name="F:\git_repo\JSF\Dummy_Project\web\WEB-INF\tags" />
-      <recent name="F:\git_repo\JSF\Dummy_Project\web\template" />
-      <recent name="F:\git_repo\JSF\Dummy_Project\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="de" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\git_repo\JSF\Dummy_Project\web\WEB-INF" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\git_repo\JSF\Dummy_Project\web\content\charts" />
+      <recent name="F:\git_repo\JSF\Dummy_Project\web\resources\components" />
       <recent name="F:\git_repo\JSF\Dummy_Project\web\content" />
+      <recent name="F:\git_repo\JSF\Dummy_Project\web\WEB-INF\tags" />
+      <recent name="F:\git_repo\JSF\Dummy_Project\web\template" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -472,17 +453,20 @@
       <workItem from="1591870044913" duration="2054000" />
       <workItem from="1591952065199" duration="6910000" />
       <workItem from="1592026962640" duration="13487000" />
+      <workItem from="1592235665911" duration="746000" />
+      <workItem from="1592632216759" duration="67000" />
+      <workItem from="1599058733710" duration="3516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93398000" />
+    <option name="totallyTimeSpent" value="97727000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="67" width="1767" height="958" extended-state="0" />
+    <frame x="91" y="105" width="1767" height="958" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19332162" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1980082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -492,16 +476,16 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997071" weight="0.32969698" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.66080844" weight="0.23757575" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7070885" visible="true" weight="0.32848486" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65905094" weight="0.23757575" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7041593" visible="true" weight="0.43515152" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.29291153" side_tool="true" visible="true" weight="0.32848486" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4997071" weight="0.32848486" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.29584065" side_tool="true" visible="true" weight="0.43515152" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49912128" weight="0.32848486" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4997071" weight="0.32969698" />
@@ -544,11 +528,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="JBossConfiguration">
-        <watch expression="validity" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -655,20 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Behoerde.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/CalenderDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/components/componentOutputLabel.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -679,45 +644,73 @@
     <entry file="file://$PROJECT_DIR$/web/resources/components/componentButton.xhtml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/DummyProject.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/CalenderDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/components/abmeldeKomponente.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="612">
           <caret line="36" column="113" selection-start-line="35" selection-start-column="24" selection-end-line="36" selection-end-column="113" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/components/autocompleteKomponente.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Behoerde.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/content/calenderDialog.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="160" selection-start-line="26" selection-start-column="160" selection-end-line="26" selection-end-column="160" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/content/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/AutoComplete.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="53" column="79" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/content/calenderDialog.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="26" column="160" selection-start-line="26" selection-start-column="160" selection-end-line="26" selection-end-column="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/components/autocompleteKomponente.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/charts/Charts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/content/charts/charts.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/DummyProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/content/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
         </state>
       </provider>
     </entry>

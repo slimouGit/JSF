@@ -23,6 +23,10 @@ public class DummyProject implements Serializable {
         System.out.println("Projekttitel" + this.inputValue);
     }
 
+    public String redirect(){
+        return "content/charts/charts.xhtml?faces-redirect = true";
+    }
+
 
 
     public String getProjectTitle() {
