@@ -42,7 +42,7 @@ public class Charts implements Serializable {
         npModel.set("Abgemeldet", 401);
 
         npModel.setTitle("NatürlichePersonen");
-        npModel.setLegendPosition("w");
+        npModel.setSeriesColors("58BA27,FFCC33,F74A4A,F52F2F,A30303");
         npModel.setShadow(false);
     }
 

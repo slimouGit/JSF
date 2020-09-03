@@ -4,3 +4,15 @@ body{
 .componentLabel{
     background: greenyellow;
 }
+
+
+
+.jqplot-series-canvas{
+    background: #fff;
+}
+
+canvas{
+    border-bottom-color: red;
+}
+
+

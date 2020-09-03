@@ -5,38 +5,45 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:dummy-tag="http://dummy-project.de/facelets"
 >
 <h:head>
     <title>Charts</title>
+    <h:outputStylesheet library="css" name="style.css"/>
     <f:metadata>
     </f:metadata>
 </h:head>
 <f:view>
-
     <h:outputLabel value="#{charts.title}"/>
+    <ui:fragment>
 
-    <h:form>
-        <p:growl id="growl" showDetail="true" />
-
-        <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
-            <p:chart type="pie" model="#{charts.npModel}" style="width:400px;height:300px">
-                <p:ajax event="itemSelect" listener="#{charts.npSelect}" update="growl" />
-            </p:chart>
-        </h:panelGrid>
-
-        <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
-            <p:chart type="pie" model="#{charts.wpModel}" style="width:400px;height:300px">
-                <p:ajax event="itemSelect" listener="#{charts.wpSelect}" update="growl" />
-            </p:chart>
-        </h:panelGrid>
-
-        <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
-            <p:chart type="pie" model="#{charts.gwbModel}" style="width:400px;height:300px">
-                <p:ajax event="itemSelect" listener="#{charts.gwbSelect}" update="growl" />
-            </p:chart>
-        </h:panelGrid>
+    <h:form id="dashboard-charts">
+        <p:growl id="growl" showDetail="true"/>
+        <div>
+            <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
+                <p:chart type="pie" model="#{charts.npModel}" style="width:500px;height:300px;border:none;">
+                    <p:ajax event="itemSelect" listener="#{charts.npSelect}" update="growl"/>
+                </p:chart>
+            </h:panelGrid>
+        </div>
+        <div>
+            <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
+                <p:chart type="pie" model="#{charts.wpModel}" style="width:400px;height:300px">
+                    <p:ajax event="itemSelect" listener="#{charts.wpSelect}" update="growl"/>
+                </p:chart>
+            </h:panelGrid>
+        </div>
+        <div>
+            <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
+                <p:chart type="pie" model="#{charts.gwbModel}" style="width:400px;height:300px">
+                    <p:ajax event="itemSelect" listener="#{charts.gwbSelect}" update="growl"/>
+                </p:chart>
+            </h:panelGrid>
+        </div>
 
     </h:form>
+    </ui:fragment>
 
 </f:view>
 </html>
