@@ -34,8 +34,8 @@ public class Charts implements Serializable {
         pieModel1.set("Freigegeben", 540);
         pieModel1.set("In Prüfung", 325);
         pieModel1.set("Storniert", 702);
-        pieModel1.set("Zurückgewiesen", 421);
-        pieModel1.set("Abgemeldet", 1);
+        pieModel1.set("Zurückgewiesen", 0);
+        pieModel1.set("Abgemeldet", 401);
 
         pieModel1.setTitle("Wachpersonen");
         pieModel1.setLegendPosition("w");
