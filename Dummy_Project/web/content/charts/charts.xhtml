@@ -11,6 +11,8 @@
 <h:head>
     <title>Charts</title>
     <h:outputStylesheet library="css" name="style.css"/>
+    <h:outputScript library="js" name="jqplotOverlay.js" target="head"/>
+    <h:outputScript library="js" name="jsExtend.js" target="head"/>
     <f:metadata>
     </f:metadata>
 </h:head>
@@ -22,7 +24,7 @@
         <p:growl id="growl" showDetail="true"/>
         <div>
             <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
-                <p:chart type="pie" model="#{charts.npModel}" style="width:500px;height:300px;border:none;">
+                <p:chart type="pie" model="#{charts.npModel}" style="width:400px;height:300px">
                     <p:ajax event="itemSelect" listener="#{charts.npSelect}" update="growl"/>
                 </p:chart>
             </h:panelGrid>

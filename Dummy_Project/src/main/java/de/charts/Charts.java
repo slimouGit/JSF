@@ -44,6 +44,7 @@ public class Charts implements Serializable {
         npModel.setTitle("NatürlichePersonen");
         npModel.setSeriesColors("58BA27,FFCC33,F74A4A,F52F2F,A30303");
         npModel.setShadow(false);
+        npModel.setExtender("pieExtender");
     }
 
     private void createWpModel() {
@@ -56,8 +57,9 @@ public class Charts implements Serializable {
         wpModel.set("Abgemeldet", 60);
 
         wpModel.setTitle("Wachpersonen");
-        wpModel.setLegendPosition("w");
+        npModel.setSeriesColors("58BA27,FFCC33,F74A4A,F52F2F,A30303");
         wpModel.setShadow(false);
+        npModel.setExtender("pieExtender");
     }
 
     private void createGwbModel() {
@@ -68,8 +70,9 @@ public class Charts implements Serializable {
         gwbModel.set("Abgemeldet", 20);
 
         gwbModel.setTitle("Gewerbebetriebe");
-        gwbModel.setLegendPosition("w");
+        npModel.setSeriesColors("58BA27,FFCC33,F74A4A,F52F2F,A30303");
         gwbModel.setShadow(false);
+        npModel.setExtender("pieExtender");
     }
 
     public void npSelect(ItemSelectEvent event) {

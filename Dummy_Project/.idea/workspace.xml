@@ -7,19 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="941b3880-2f10-4b98-9b88-775f9b9018b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/resources/css/chart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/jqplotOverlay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/jsExtend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/WEB-INF/classes/de/DummyProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/WEB-INF/classes/de/DummyProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/WEB-INF/tags/Header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/WEB-INF/tags/Header.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/resources/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/DummyProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/DummyProject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/charts/Charts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/charts/Charts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Dummy_Project-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Dummy_Project-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/DummyProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/DummyProject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/tags/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/tags/header.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/content/charts/charts.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/content/charts/charts.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/style.css" afterDir="false" />
     </list>
@@ -36,11 +30,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/content/charts/charts.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="24" column="100" selection-start-line="24" selection-start-column="100" selection-end-line="24" selection-end-column="100" />
+            <state relative-caret-position="255">
+              <caret line="26" column="94" selection-start-line="26" selection-start-column="94" selection-end-line="26" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/js/jqplotOverlay.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5185">
+              <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/resources/js/jsExtend.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -48,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/charts/Charts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="748">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
             </state>
           </provider>
         </entry>
@@ -73,15 +85,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/dummy.taglib.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/resources/css/chart.css">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -99,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/web/resources/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="21" />
+              <caret line="9" selection-start-line="9" selection-start-column="2" selection-end-line="15" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -120,6 +123,7 @@
       <find>datum</find>
       <find>pieModel1</find>
       <find>Simple</find>
+      <find>prime</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,6 +158,7 @@
         <option value="$PROJECT_DIR$/web/resources/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/de/charts/Charts.java" />
         <option value="$PROJECT_DIR$/web/content/charts/charts.xhtml" />
+        <option value="$PROJECT_DIR$/web/resources/js/jsExtend.js" />
       </list>
     </option>
   </component>
@@ -260,6 +265,13 @@
               <item name="Dummy_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dummy_Project" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dummy_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dummy_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -287,7 +299,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/resources/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/resources/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -298,11 +310,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\git_repo\JSF\Dummy_Project\web\resources\js" />
       <recent name="F:\git_repo\JSF\Dummy_Project\web\resources\css" />
       <recent name="F:\git_repo\JSF\Dummy_Project\web\content\charts" />
       <recent name="F:\git_repo\JSF\Dummy_Project\web\resources\components" />
       <recent name="F:\git_repo\JSF\Dummy_Project\web\content" />
-      <recent name="F:\git_repo\JSF\Dummy_Project\web\WEB-INF\tags" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="de" />
@@ -467,7 +479,7 @@
       <workItem from="1592632216759" duration="67000" />
       <workItem from="1599058733710" duration="4317000" />
       <workItem from="1599103492983" duration="2650000" />
-      <workItem from="1599145046193" duration="6689000" />
+      <workItem from="1599145046193" duration="10465000" />
     </task>
     <task id="LOCAL-00001" summary="Charts">
       <created>1599062637532</created>
@@ -483,15 +495,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599103868996</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="series colors">
+      <created>1599151892201</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599151892201</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107867000" />
+    <option name="totallyTimeSpent" value="111643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="233" y="71" width="1767" height="958" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10603398" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -503,15 +521,15 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997071" weight="0.32969698" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6502636" weight="0.23757575" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.69361454" visible="true" weight="0.3648485" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.63971883" visible="true" weight="0.23757575" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.68365556" weight="0.2642424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.30638546" side_tool="true" visible="true" weight="0.3648485" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3602812" side_tool="true" visible="true" weight="0.23757575" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49853545" weight="0.32848486" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -520,7 +538,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.2606913" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.2606913" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="JSF" order="6" />
@@ -547,7 +565,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Charts" />
     <MESSAGE value="Test amounts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test amounts" />
+    <MESSAGE value="series colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="series colors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -593,13 +612,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/messages.properties">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
       <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
@@ -728,6 +740,27 @@
     <entry file="file://$PROJECT_DIR$/web/resources/css/chart.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-start-column="2" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="47" column="57" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/js/jqplotOverlay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5185">
+          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/primefaces-6.1-sources.jar!/org/primefaces/model/chart/ChartModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -737,22 +770,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/charts/Charts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="748">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/content/charts/charts.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="100" selection-start-line="24" selection-start-column="100" selection-end-line="24" selection-end-column="100" />
+        <state relative-caret-position="255">
+          <caret line="26" column="94" selection-start-line="26" selection-start-column="94" selection-end-line="26" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/js/jsExtend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
