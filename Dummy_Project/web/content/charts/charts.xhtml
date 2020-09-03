@@ -19,8 +19,20 @@
         <p:growl id="growl" showDetail="true" />
 
         <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
-            <p:chart type="pie" model="#{charts.pieModel1}" style="width:400px;height:300px">
-                <p:ajax event="itemSelect" listener="#{charts.itemSelect}" update="growl" />
+            <p:chart type="pie" model="#{charts.npModel}" style="width:400px;height:300px">
+                <p:ajax event="itemSelect" listener="#{charts.npSelect}" update="growl" />
+            </p:chart>
+        </h:panelGrid>
+
+        <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
+            <p:chart type="pie" model="#{charts.wpModel}" style="width:400px;height:300px">
+                <p:ajax event="itemSelect" listener="#{charts.wpSelect}" update="growl" />
+            </p:chart>
+        </h:panelGrid>
+
+        <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
+            <p:chart type="pie" model="#{charts.gwbModel}" style="width:400px;height:300px">
+                <p:ajax event="itemSelect" listener="#{charts.gwbSelect}" update="growl" />
             </p:chart>
         </h:panelGrid>
 

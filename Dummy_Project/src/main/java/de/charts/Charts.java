@@ -16,7 +16,9 @@ public class Charts implements Serializable {
 
     private String title;
 
-    private PieChartModel pieModel1;
+    private PieChartModel npModel;
+    private PieChartModel wpModel;
+    private PieChartModel gwbModel;
 
     @PostConstruct
     public void init(){
@@ -25,29 +27,69 @@ public class Charts implements Serializable {
     }
 
     private void createPieModels() {
-        createPieModel1();
+        createNpModel();
+        createWpModel();
+        createGwbModel();
     }
 
-    private void createPieModel1() {
-        pieModel1 = new PieChartModel();
+    private void createNpModel() {
+        npModel = new PieChartModel();
 
-        pieModel1.set("Freigegeben", 540);
-        pieModel1.set("In Prüfung", 325);
-        pieModel1.set("Storniert", 702);
-        pieModel1.set("Zurückgewiesen", 0);
-        pieModel1.set("Abgemeldet", 401);
+        npModel.set("Freigegeben", 540);
+        npModel.set("In Prüfung", 325);
+        npModel.set("Storniert", 702);
+        npModel.set("Zurückgewiesen", 0);
+        npModel.set("Abgemeldet", 401);
 
-        pieModel1.setTitle("Wachpersonen");
-        pieModel1.setLegendPosition("w");
-        pieModel1.setShadow(false);
+        npModel.setTitle("NatürlichePersonen");
+        npModel.setLegendPosition("w");
+        npModel.setShadow(false);
     }
 
-    public void itemSelect(ItemSelectEvent event) {
+    private void createWpModel() {
+        wpModel = new PieChartModel();
+
+        wpModel.set("Freigegeben", 120);
+        wpModel.set("In Prüfung", 80);
+        wpModel.set("Storniert", 0);
+        wpModel.set("Zurückgewiesen", 300);
+        wpModel.set("Abgemeldet", 60);
+
+        wpModel.setTitle("Wachpersonen");
+        wpModel.setLegendPosition("w");
+        wpModel.setShadow(false);
+    }
+
+    private void createGwbModel() {
+        gwbModel = new PieChartModel();
+
+        gwbModel.set("Freigegeben", 120);
+        gwbModel.set("In Prüfung", 80);
+        gwbModel.set("Abgemeldet", 20);
+
+        gwbModel.setTitle("Gewerbebetriebe");
+        gwbModel.setLegendPosition("w");
+        gwbModel.setShadow(false);
+    }
+
+    public void npSelect(ItemSelectEvent event) {
         FacesMessage msg = new FacesMessage(FacesMessage.SEVERITY_INFO, "Item selected",
                 "Item Index: " + event.getItemIndex() + ", Series Index:" + event.getSeriesIndex());
-
         FacesContext.getCurrentInstance().addMessage(null, msg);
     }
+
+    public void wpSelect(ItemSelectEvent event) {
+        FacesMessage msg = new FacesMessage(FacesMessage.SEVERITY_INFO, "Item selected",
+                "Item Index: " + event.getItemIndex() + ", Series Index:" + event.getSeriesIndex());
+        FacesContext.getCurrentInstance().addMessage(null, msg);
+    }
+
+    public void gwbSelect(ItemSelectEvent event) {
+        FacesMessage msg = new FacesMessage(FacesMessage.SEVERITY_INFO, "Item selected",
+                "Item Index: " + event.getItemIndex() + ", Series Index:" + event.getSeriesIndex());
+        FacesContext.getCurrentInstance().addMessage(null, msg);
+    }
+
 
 
 
@@ -59,7 +101,15 @@ public class Charts implements Serializable {
         this.title = title;
     }
 
-    public PieChartModel getPieModel1() {
-        return pieModel1;
+    public PieChartModel getWpModel() {
+        return wpModel;
+    }
+
+    public PieChartModel getNpModel() {
+        return npModel;
+    }
+
+    public PieChartModel getGwbModel() {
+        return gwbModel;
     }
 }

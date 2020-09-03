@@ -8,11 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="941b3880-2f10-4b98-9b88-775f9b9018b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/WEB-INF/classes/de/DummyProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/WEB-INF/classes/de/DummyProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/content/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/content/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/DummyProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/DummyProject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/charts/Charts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/charts/Charts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/DummyProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/DummyProject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/content/charts/charts.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/content/charts/charts.xhtml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/content/charts/charts.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            <state relative-caret-position="333">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -57,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/charts/Charts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+            <state relative-caret-position="170">
+              <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -125,9 +122,9 @@
         <option value="$PROJECT_DIR$/web/resources/components/abmeldeKomponente.xhtml" />
         <option value="$PROJECT_DIR$/web/resources/components/autocompleteKomponente.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/de/AutoComplete.java" />
-        <option value="$PROJECT_DIR$/web/content/charts/charts.xhtml" />
         <option value="$PROJECT_DIR$/web/content/index.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/de/DummyProject.java" />
+        <option value="$PROJECT_DIR$/web/content/charts/charts.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/de/charts/Charts.java" />
       </list>
     </option>
@@ -441,7 +438,7 @@
       <workItem from="1592235665911" duration="746000" />
       <workItem from="1592632216759" duration="67000" />
       <workItem from="1599058733710" duration="4317000" />
-      <workItem from="1599103492983" duration="326000" />
+      <workItem from="1599103492983" duration="2650000" />
     </task>
     <task id="LOCAL-00001" summary="Charts">
       <created>1599062637532</created>
@@ -450,11 +447,18 @@
       <option name="project" value="LOCAL" />
       <updated>1599062637532</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Test amounts">
+      <created>1599103868996</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599103868996</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98854000" />
+    <option name="totallyTimeSpent" value="101178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="91" y="105" width="1767" height="958" extended-state="0" />
@@ -471,14 +475,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997071" weight="0.32969698" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65846515" weight="0.23757575" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7029877" visible="true" weight="0.43515152" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7029877" visible="true" weight="0.3648485" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2970123" side_tool="true" visible="true" weight="0.43515152" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2970123" side_tool="true" visible="true" weight="0.3648485" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49912128" weight="0.32848486" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -513,7 +517,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Charts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Charts" />
+    <MESSAGE value="Test amounts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test amounts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -684,13 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/content/charts/charts.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/content/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -705,10 +703,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/content/charts/charts.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/charts/Charts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+        <state relative-caret-position="170">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
         </state>
       </provider>
     </entry>
