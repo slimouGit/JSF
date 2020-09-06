@@ -7,18 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="941b3880-2f10-4b98-9b88-775f9b9018b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/dashboard/NpZielUrlMitFiltern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/dashboard/ZielUrlErmitteln.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/WEB-INF/classes/de/DummyProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Dummy_Project_war_exploded.war/WEB-INF/classes/de/DummyProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/DummyProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/DummyProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/charts/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/dashboard/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Dummy_Project-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Dummy_Project-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/DummyProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/DummyProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/content/charts/charts.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/content/dashboard/index.xhtml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/dashboard/Dashboard.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1299">
@@ -63,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/dashboard/NpZielUrlMitFiltern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="306">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
@@ -191,8 +180,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="240" />
-    <option name="y" value="15" />
+    <option name="x" value="210" />
+    <option name="y" value="147" />
     <option name="width" value="1868" />
     <option name="height" value="1054" />
   </component>
@@ -521,7 +510,7 @@
       <workItem from="1599300745931" duration="521000" />
       <workItem from="1599321410203" duration="3065000" />
       <workItem from="1599363371907" duration="486000" />
-      <workItem from="1599370143965" duration="12997000" />
+      <workItem from="1599370143965" duration="13653000" />
     </task>
     <task id="LOCAL-00001" summary="Charts">
       <created>1599062637532</created>
@@ -558,16 +547,24 @@
       <option name="project" value="LOCAL" />
       <updated>1599388444161</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Kapselung Ziel URL ermitteln, refactoring directory/files">
+      <created>1599393496417</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599393496417</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156348000" />
+    <option name="totallyTimeSpent" value="157004000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="240" y="15" width="1868" height="1054" extended-state="0" />
+    <frame x="210" y="147" width="1868" height="1054" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20353982" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20353982" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -578,7 +575,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4988938" weight="0.32899022" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5425885" weight="0.15960912" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.5824115" visible="true" weight="0.36807817" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5824115" visible="true" weight="0.36807817" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -624,7 +621,8 @@
     <MESSAGE value="series colors" />
     <MESSAGE value="js extender" />
     <MESSAGE value="Screendesign, CSS, Start Logik, ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Screendesign, CSS, Start Logik, ..." />
+    <MESSAGE value="Kapselung Ziel URL ermitteln, refactoring directory/files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kapselung Ziel URL ermitteln, refactoring directory/files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -840,13 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/dashboard/ZielUrlErmitteln.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/content/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -861,17 +852,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/dashboard/NpZielUrlMitFiltern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/dashboard/Dashboard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1299">
           <caret line="170" column="31" selection-start-line="170" selection-start-column="31" selection-end-line="170" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/dashboard/ZielUrlErmitteln.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/dashboard/NpZielUrlMitFiltern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
