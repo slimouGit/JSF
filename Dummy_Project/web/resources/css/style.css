@@ -1,5 +1,6 @@
 body{
     background: #fff;
+    font-family: san-serif;
 }
 .componentLabel{
     background: greenyellow;
@@ -7,12 +8,104 @@ body{
 
 
 
-/*.jqplot-series-canvas{*/
-/*    background: #fff;*/
-/*}*/
+/*DASHBOARD*/
 
-/*canvas{*/
-/*    border-bottom-color: red;*/
-/*}*/
+.graphic_np {
+    grid-area: graphic_np;
+}
+
+.graphic_wp {
+    grid-area: graphic_wp;
+}
+
+.graphic_gwb {
+    grid-area: graphic_gwb;
+}
+
+.label {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.area_info {
+    grid-area: area_info;
+}
+
+.area_action {
+    grid-area: area_action;
+}
+
+@media only screen and (min-width: 900px) {
+    .dashboard-grid {
+        display: grid;
+        grid-template-areas: 'graphic_np graphic_np graphic_wp graphic_wp graphic_gwb graphic_gwb'
+        'area_info area_info area_info area_action area_action area_action';
+        grid-gap: 0px;
+        background-color: #fff;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .dashboard-grid {
+        display: grid;
+        grid-template-areas: 'graphic_np graphic_np graphic_np graphic_np graphic_np graphic_np'
+        'graphic_wp graphic_wp graphic_wp graphic_wp graphic_wp graphic_wp'
+        'graphic_gwb graphic_gwb graphic_gwb graphic_gwb graphic_gwb graphic_gwb'
+        'area_info area_info area_info area_info area_info area_info'
+        'area_action area_action area_action area_action area_action area_action';
+        grid-gap: 0px;
+        background-color: #fff;
+        padding: 0px;
+    }
+}
+
+.dashboard-grid{
+    width: 90%;
+    margin-right: 20px;
+}
+
+.dashboard-grid > div {
+    background-color: rgba(255, 255, 255, 1.0);
+    padding: 0px 0;
+}
+
+.area_action {
+
+}
+
+.area_info {
+
+}
+
+.header-area{
+    background-color: #aaa;
+    height: 30px;
+}
+
+.content-area{
+}
+
+.legende{}
+
+.counter{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.jqplot-table-legend{
+    display: none;
+    text-align: left;
+}
+
+.jqplot-series-canvas {
+    background:white;
+    border: none;
+    box-shadow: none;
+}
+
+
+
 
 

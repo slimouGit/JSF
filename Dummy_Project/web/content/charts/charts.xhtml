@@ -10,42 +10,254 @@
 >
 <h:head>
     <title>Charts</title>
-    <h:outputStylesheet library="css" name="style.css"/>
-    <h:outputScript library="js" name="jqplotOverlay.js" target="head"/>
-    <h:outputScript library="js" name="jsExtend.js" target="head"/>
+    <h:outputStylesheet library="css" name="chart.css"/>
+    <h:outputScript library="js" name="jsExtend.js"/>
     <f:metadata>
     </f:metadata>
 </h:head>
 <f:view>
-    <h:outputLabel value="#{charts.title}"/>
-    <ui:fragment>
+    <ui:fragment id="dashboard-behoerde">
+        <div class="dashboard-grid">
 
-    <h:form id="dashboard-charts">
-        <p:growl id="growl" showDetail="true"/>
-        <div>
-            <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
-                <p:chart type="pie" model="#{charts.npModel}" style="width:400px;height:300px">
-                    <p:ajax event="itemSelect" listener="#{charts.npSelect}" update="growl"/>
-                </p:chart>
-            </h:panelGrid>
-        </div>
-        <div>
-            <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
-                <p:chart type="pie" model="#{charts.wpModel}" style="width:400px;height:300px">
-                    <p:ajax event="itemSelect" listener="#{charts.wpSelect}" update="growl"/>
-                </p:chart>
-            </h:panelGrid>
-        </div>
-        <div>
-            <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
-                <p:chart type="pie" model="#{charts.gwbModel}" style="width:400px;height:300px">
-                    <p:ajax event="itemSelect" listener="#{charts.gwbSelect}" update="growl"/>
-                </p:chart>
-            </h:panelGrid>
+            <div class="graphic_np">
+                <h:form id="netuerliche-personen-grafik">
+                    <h:panelGrid columns="1" columnClasses="left,right" style="width:100%">
+                        <p:chart responsive="true" type="pie" model="#{dashboard.npModel}">
+                            <p:ajax event="itemSelect" listener="#{dashboard.npSelect}" update="@form" process="@this"/>
+                        </p:chart>
+                        <div class="counter">42</div>
+                        <div class="legende">
+                            <p:panelGrid class="panelgrid" columns="3" style="width:100%">
+                                <p:column rendered="true" style="width:30%;">
+                                    <span class="legende-dot np-wp-gwb-freigegeben"></span><p:outputLabel
+                                        value="Freigegeben"
+                                        class="legende-value"></p:outputLabel>
+                                </p:column>
+                                <p:column rendered="true">
+                                    <span class="legende-dot np-wp-pruefung"></span><p:outputLabel value="In Prüfung"
+                                                                                                   class="legende-value"></p:outputLabel>
+                                </p:column>
+                                <p:column rendered="true" style="width:30%">
+                                    <span class="legende-dot np-loeschen"></span><p:outputLabel value="Zu löschen"
+                                                                                                class="legende-value"></p:outputLabel>
+                                </p:column>
+                                <p:column rendered="true">
+                                    <span class="legende-dot np-wp-nicht-zugelassen"></span><p:outputLabel
+                                        value="Nicht zugelassen"
+                                        class="legende-value"></p:outputLabel>
+                                </p:column>
+                                <p:column rendered="true" style="width:30%">
+                                    <span class="legende-dot np-wp-aenderung"></span><p:outputLabel
+                                        value="Änderungsantrag"
+                                        class="legende-value"></p:outputLabel>
+                                </p:column>
+                                <p:column rendered="true">
+                                    <span class="legende-dot np-wp-sonstige-ersterfassung"></span><p:outputLabel
+                                        value="Sonstige"
+                                        class="legende-value"></p:outputLabel>
+                                </p:column>
+                            </p:panelGrid>
+                        </div>
+                    </h:panelGrid>
+                </h:form>
+            </div>
+
+            <div class="graphic_wp">
+                <h:form id="wachpersonen-grafik">
+                    <h:panelGrid columns="1" columnClasses="left,right, ui-noborder" style="width:100%">
+                        <p:chart responsive="true" type="pie" model="#{dashboard.wpModel}">
+                            <p:ajax event="itemSelect" listener="#{dashboard.wpSelect}"/>
+                        </p:chart>
+                        <div class="counter">42</div>
+                        <div class="legende">
+                            <p:panelGrid class="panelgrid" columns="3" style="width:100%" columnClasses="left,right, ui-noborder">
+                                <p:column rendered="true" style="width:30%;">
+                                    <span class="legende-dot np-wp-gwb-freigegeben"></span><p:outputLabel
+                                        value="Freigegeben"
+                                        class="legende-value"></p:outputLabel>
+                                </p:column>
+                                <p:column rendered="true">
+                                    <span class="legende-dot np-wp-pruefung"></span><p:outputLabel value="In Prüfung"
+                                                                                                   class="legende-value"></p:outputLabel>
+                                </p:column>
+                                <p:column rendered="true" style="width:30%">
+                                    <span class="legende-dot wp-storniert"></span><p:outputLabel value="Storniert"
+                                                                                                 class="legende-value"></p:outputLabel>
+                                </p:column>
+                                <p:column rendered="true">
+                                    <span class="legende-dot np-wp-nicht-zugelassen"></span><p:outputLabel
+                                        value="Nicht zugelassen"
+                                        class="legende-value"></p:outputLabel>
+                                </p:column>
+                                <p:column rendered="true" style="width:30%">
+                                    <span class="legende-dot np-wp-aenderung"></span><p:outputLabel
+                                        value="Änderungsantrag"
+                                        class="legende-value"></p:outputLabel>
+                                </p:column>
+                                <p:column rendered="true">
+                                    <span class="legende-dot np-wp-sonstige-ersterfassung"></span><p:outputLabel
+                                        value="Ersterfassung"
+                                        class="legende-value"></p:outputLabel>
+                                </p:column>
+                            </p:panelGrid>
+                        </div>
+                    </h:panelGrid>
+                </h:form>
+            </div>
+
+            <div class="graphic_gwb">
+                <h:form id="gewerbebetrieb-grafik">
+                    <h:panelGrid columns="1" columnClasses="left,right" style="width:100%">
+                        <p:chart responsive="true" type="pie" model="#{dashboard.gwbModel}">
+                            <p:ajax event="itemSelect" listener="#{dashboard.gwbSelect}"/>
+                        </p:chart>
+                        <div class="counter">42</div>
+                        <div class="legende">
+                            <p:panelGrid class="panelgrid" columns="3" style="width:100%" columnClasses="left,right, ui-noborder">
+                                <p:column rendered="true" style="width:30%;">
+                                    <span class="legende-dot np-wp-gwb-freigegeben"></span><p:outputLabel
+                                        value="Freigegeben"
+                                        class="legende-value"></p:outputLabel>
+                                </p:column>
+                                <p:column rendered="true">
+                                    <span class="legende-dot gwb-invollstaendig-erfasst"></span><p:outputLabel
+                                        value="Unvollständig erfasst"
+                                        class="legende-value"></p:outputLabel>
+                                </p:column>
+                                <p:column rendered="true" style="width:30%">
+                                    <span class="legende-dot gwb-abgemeldet"></span><p:outputLabel value="Abgemeldet"
+                                                                                                   class="legende-value"></p:outputLabel>
+                                </p:column>
+                            </p:panelGrid>
+                        </div>
+                    </h:panelGrid>
+                </h:form>
+            </div>
+
+
+            <div class="area_info">
+
+                <div class="header-area">
+                    <div style="width: 100%">
+                        <div style="width: 5%; float: left; vertical-align: auto;">
+                            <p:graphicImage library="img" name="Informationen.svg" width="20" height="20"/>
+                        </div>
+                        <div style="width: 95%; float: left;vertical-align: auto;">
+                            Informationen
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-area">
+                    <div style="width: 100%">
+                        <div style="width: 50%; float: left;">
+                            <h:outputLink class="link" value="charts.xhtml">
+                                Wiederholungsprüfungen
+                            </h:outputLink>
+                        </div>
+                        <div style="width: 50%; float: left;">
+                            <div class="dashboard-counter">3</div>
+                        </div>
+                    </div>
+                    <div style="width: 100%">
+                        <div style="width: 50%; float: left;">
+                            <h:outputLink class="link" value="charts.xhtml">
+                                Beantragte Wachpersonen
+                            </h:outputLink>
+                        </div>
+                        <div style="width: 50%; float: left;">
+                            <span class="dashboard-counter">20</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <ui:remove>
+                <div class="area_info">
+
+                    <div class="header-area">
+                        <div style="width: 100%">
+                            <div style="width: 5%; float: left; vertical-align: auto;">
+                                <p:graphicImage library="img" name="Informationen.svg" width="20" height="20"/>
+                            </div>
+                            <div style="width: 95%; float: left;vertical-align: auto;">
+                                Informationen
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-area">
+                        <p:panelGrid columns="2" style="width:100%">
+                            <p:column>
+                                <h:outputLink class="link" value="charts.xhtml">
+                                    Wiederholungsprüfungen
+                                </h:outputLink>
+                            </p:column>
+                            <p:column>
+                                <span class="dashboard-counter">3</span>
+                            </p:column>
+                        </p:panelGrid>
+
+                        <p:panelGrid columns="2" style="width:100%">
+                            <p:column>
+                                <h:outputLink class="link" value="charts.xhtml">
+                                    Beantragte Wachpersonen
+                                </h:outputLink>
+                            </p:column>
+                            <p:column>
+                                <span class="dashboard-counter">20</span>
+                            </p:column>
+                        </p:panelGrid>
+                    </div>
+                </div>
+
+            </ui:remove>
+
+            <div class="area_action">
+
+                <div class="header-area">
+                    <div style="width: 100%">
+                        <div style="width: 5%; float: left; vertical-align: auto;">
+                            <p:graphicImage library="img" name="Funktionen.svg" width="20" height="20"/>
+                        </div>
+                        <div style="width: 95%; float: left;vertical-align: auto;">
+                            Funktionen
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-area">
+                    <div style="width: 100%">
+                        <div style="width: 50%; float: left;">
+                            <h:outputLink class="link" value="charts.xhtml">
+                                Natürliche Person erfassen
+                            </h:outputLink>
+                        </div>
+                        <div style="width: 50%; float: left;">
+                            <h:outputLink class="link" value="../index.xhtml">
+                                Wachperson erfassen
+                            </h:outputLink>
+                        </div>
+                    </div>
+                    <div style="width: 100%">
+                        <div style="width: 50%; float: left;">
+                            <h:outputLink class="link" value="charts.xhtml">
+                                Gewerbebetrieb erfassen
+                            </h:outputLink>
+                        </div>
+                        <div style="width: 50%; float: left;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
-    </h:form>
     </ui:fragment>
+
 
 </f:view>
 </html>
