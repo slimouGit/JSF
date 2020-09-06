@@ -23,6 +23,10 @@ public class Dashboard implements Serializable {
     private PieChartModel wpModel;
     private PieChartModel gwbModel;
 
+    private int npGesamt;
+    private int wpGesamt;
+    private int gwbGesamt;
+
     private Map<String, List<String>> npStatusListe = new HashMap<>();
     private Map<String, List<String>> wpStatusListe = new HashMap<>();
     private Map<String, List<String>> gwbStatusListe = new HashMap<>();
@@ -66,7 +70,7 @@ public class Dashboard implements Serializable {
     private void createPieModels() {
         createNpModel();
         createWpModel();
-        createGwbModel();
+        createGwbModel(this.gwbStatusListe);
     }
 
 
@@ -84,6 +88,8 @@ public class Dashboard implements Serializable {
         npModel.setSeriesColors("0cb500,00b57c,b53000,b50018,00a0b5,00d5f1");
         npModel.setShadow(false);
         npModel.setExtender("pieExtender");
+
+        this.npGesamt = 1;
     }
 
     private void createWpModel() {
@@ -100,12 +106,14 @@ public class Dashboard implements Serializable {
         wpModel.setSeriesColors("0cb500,00b57c,b53000,b50018,00a0b5,00d5f1");
         wpModel.setShadow(false);
         wpModel.setExtender("pieExtender");
+
+        this.wpGesamt = 2;
     }
 
-    private void createGwbModel() {
+    private void createGwbModel(Map<String, List<String>> gwbStatusListe) {
         gwbModel = new PieChartModel();
 
-        for(Map.Entry<String, List<String>> entry : this.gwbStatusListe.entrySet()){
+        for(Map.Entry<String, List<String>> entry : gwbStatusListe.entrySet()){
             gwbModel.set(entry.getKey(),countGwbNachStatusListe(entry.getValue()));
         }
 
@@ -113,6 +121,8 @@ public class Dashboard implements Serializable {
         gwbModel.setSeriesColors("0cb500,00b57c,b53000");
         gwbModel.setShadow(false);
         gwbModel.setExtender("pieExtender");
+
+        this.gwbGesamt = 3;
     }
 
     private int countGwbNachStatusListe(List<String> statusListe) {
@@ -199,5 +209,17 @@ public class Dashboard implements Serializable {
 
     public PieChartModel getGwbModel() {
         return gwbModel;
+    }
+
+    public int getNpGesamt() {
+        return npGesamt;
+    }
+
+    public int getWpGesamt() {
+        return wpGesamt;
+    }
+
+    public int getGwbGesamt() {
+        return gwbGesamt;
     }
 }
