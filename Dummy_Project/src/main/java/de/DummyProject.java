@@ -24,7 +24,7 @@ public class DummyProject implements Serializable {
     }
 
     public String redirect(){
-        return "/content/charts/charts.xhtml?faces-redirect=true";
+        return "/content/dashboard/index.xhtml?faces-redirect=true";
     }
 
 

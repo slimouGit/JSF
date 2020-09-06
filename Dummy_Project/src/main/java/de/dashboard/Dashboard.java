@@ -1,4 +1,4 @@
-package de.charts;
+package de.dashboard;
 
 import org.primefaces.event.ItemSelectEvent;
 import org.primefaces.model.chart.PieChartModel;
@@ -122,31 +122,8 @@ public class Dashboard implements Serializable {
 
 
     public void npSelect(ItemSelectEvent event) {
-        String target;
-        System.out.println("Item Index: " + event.getItemIndex() + " Series Index: " + event.getSeriesIndex());
-        switch (event.getItemIndex()) {
-            case 0:
-                target = "/content/index.xhtml?faces-redirect=true";
-                break;
-            case 1:
-                target = "/content/index.xhtml?faces-redirect=true";
-                break;
-            case 2:
-                target = "/content/index.xhtml?faces-redirect=true";
-                break;
-            case 3:
-                target = "/content/index.xhtml?faces-redirect=true";
-                break;
-            case 4:
-                target = "/content/index.xhtml?faces-redirect=true";
-                break;
-            case 5:
-                target = "/content/index.xhtml?faces-redirect=true";
-                break;
-            default:
-                target = "charts.xhtml?faces-redirect=true";
-        }
-        redirect(target);
+        NpZielUrlMitFiltern weiterleitungNp = new NpZielUrlMitFiltern(event.getItemIndex());
+        redirect(weiterleitungNp.getWeiterleitungsziel());
     }
 
     public void wpSelect(ItemSelectEvent event) {
@@ -172,7 +149,7 @@ public class Dashboard implements Serializable {
                 target = "/content/index.xhtml?faces-redirect=true";
                 break;
             default:
-                target = "charts.xhtml?faces-redirect=true";
+                target = "index.xhtml?faces-redirect=true";
         }
         redirect(target);
     }
@@ -191,7 +168,7 @@ public class Dashboard implements Serializable {
                 target = "/content/index.xhtml?faces-redirect=true";
                 break;
             default:
-                target = "charts.xhtml?faces-redirect=true";
+                target = "index.xhtml?faces-redirect=true";
         }
         redirect(target);
     }
