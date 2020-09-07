@@ -6,13 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="941b3880-2f10-4b98-9b88-775f9b9018b0" name="Default Changelist" comment="screendesign">
+    <list default="true" id="941b3880-2f10-4b98-9b88-775f9b9018b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/dashboard/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/dashboard/Dashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Dummy_Project-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Dummy_Project-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/content/dashboard/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/content/dashboard/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/img/Dashbord-Behoerde.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/chart.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/css/chart.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/content/dashboard/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="244" column="67" selection-start-line="244" selection-start-column="67" selection-end-line="244" selection-end-column="67" />
+            <state relative-caret-position="253">
+              <caret line="119" column="48" selection-start-line="119" selection-start-column="48" selection-end-line="119" selection-end-column="48" />
               <folding>
                 <element signature="n#ui:remove#0;n#div#0;n#ui:fragment#0;n#f:view#0;n#html#0;n#!!top" />
               </folding>
@@ -42,8 +43,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/dashboard/Dashboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="124" column="27" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
+            <state relative-caret-position="357">
+              <caret line="108" column="24" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/primefaces-6.1-sources.jar!/org/primefaces/model/chart/ChartModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
         </entry>
@@ -74,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/DummyProject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="425">
               <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
             </state>
           </provider>
@@ -83,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/resources/css/chart.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="122" column="8" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="8" />
+            <state relative-caret-position="371">
+              <caret line="134" column="17" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -114,6 +124,8 @@
       <find>dot</find>
       <find>fragment</find>
       <find>npModel</find>
+      <find>counter</find>
+      <find>legend</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,7 +161,6 @@
         <option value="$PROJECT_DIR$/web/resources/js/jsExtend.js" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/resources/css/style.css" />
-        <option value="$PROJECT_DIR$/web/resources/css/chart.css" />
         <option value="$PROJECT_DIR$/src/main/java/de/charts/Charts.java" />
         <option value="$PROJECT_DIR$/web/content/charts/charts.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/de/charts/WeiterleitungNp.java" />
@@ -160,6 +171,7 @@
         <option value="$PROJECT_DIR$/src/main/java/de/dashboard/ZielUrlErmitteln.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/DummyProject.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/dashboard/NpZielUrlMitFiltern.java" />
+        <option value="$PROJECT_DIR$/web/resources/css/chart.css" />
         <option value="$PROJECT_DIR$/src/main/java/de/dashboard/Dashboard.java" />
         <option value="$PROJECT_DIR$/web/content/dashboard/index.xhtml" />
       </list>
@@ -519,7 +531,8 @@
       <workItem from="1599300745931" duration="521000" />
       <workItem from="1599321410203" duration="3065000" />
       <workItem from="1599363371907" duration="486000" />
-      <workItem from="1599370143965" duration="16131000" />
+      <workItem from="1599370143965" duration="16308000" />
+      <workItem from="1599487885915" duration="4506000" />
     </task>
     <task id="LOCAL-00001" summary="Charts">
       <created>1599062637532</created>
@@ -570,16 +583,23 @@
       <option name="project" value="LOCAL" />
       <updated>1599396422777</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="properties for amount values">
+      <created>1599404169228</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599404169229</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159482000" />
+    <option name="totallyTimeSpent" value="164165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="29" y="20" width="1868" height="1054" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20353982" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20575221" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -589,15 +609,15 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4988938" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.539823" visible="true" weight="0.15960912" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5801991" weight="0.36807817" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.53097343" visible="true" weight="0.4136808" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.81913716" weight="0.36807817" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4994681" weight="0.3288835" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.460177" side_tool="true" visible="true" weight="0.15960912" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.46902654" side_tool="true" visible="true" weight="0.4136808" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49853545" weight="0.32848486" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -638,7 +658,8 @@
     <MESSAGE value="Screendesign, CSS, Start Logik, ..." />
     <MESSAGE value="Kapselung Ziel URL ermitteln, refactoring directory/files" />
     <MESSAGE value="screendesign" />
-    <option name="LAST_COMMIT_MESSAGE" value="screendesign" />
+    <MESSAGE value="properties for amount values" />
+    <option name="LAST_COMMIT_MESSAGE" value="properties for amount values" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -830,17 +851,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/DummyProject.java">
+    <entry file="file://$PROJECT_DIR$/web/content/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/dashboard/ZielUrlErmitteln.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="442">
+          <caret line="32" column="111" selection-start-line="32" selection-start-column="111" selection-end-line="32" selection-end-column="111" />
         </state>
       </provider>
     </entry>
@@ -854,38 +868,52 @@
     <entry file="file://F:/referenzen/Portfolio/Digital/BWR/DashBoard/Dashbord-Behoerde.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/primefaces-6.1-sources.jar!/org/primefaces/model/chart/ChartModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/dashboard/ZielUrlErmitteln.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/dashboard/Dashboard.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/DummyProject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="124" column="27" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/content/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" column="111" selection-start-line="32" selection-start-column="111" selection-end-line="32" selection-end-column="111" />
+        <state relative-caret-position="425">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/css/chart.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="122" column="8" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="8" />
+        <state relative-caret-position="371">
+          <caret line="134" column="17" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/primefaces-6.1-sources.jar!/org/primefaces/model/chart/ChartModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/dashboard/Dashboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="108" column="24" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/content/dashboard/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="244" column="67" selection-start-line="244" selection-start-column="67" selection-end-line="244" selection-end-column="67" />
+        <state relative-caret-position="253">
+          <caret line="119" column="48" selection-start-line="119" selection-start-column="48" selection-end-line="119" selection-end-column="48" />
           <folding>
             <element signature="n#ui:remove#0;n#div#0;n#ui:fragment#0;n#f:view#0;n#html#0;n#!!top" />
           </folding>

@@ -10,10 +10,7 @@ import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import java.io.IOException;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Named
 @ViewScoped
@@ -29,10 +26,19 @@ public class Dashboard implements Serializable {
 
     private Map<String, List<String>> npStatusListe = new HashMap<>();
     private Map<String, List<String>> wpStatusListe = new HashMap<>();
-    private Map<String, List<String>> gwbStatusListe = new HashMap<>();
+    private Map<String, String> gwbStatusListe = new LinkedHashMap<>();
+
+    Map<String, String> colorList = new LinkedHashMap<>();
 
     @PostConstruct
     public void init() {
+
+        this.colorList = new ArrayList<>(
+                Arrays.asList("0cb500",
+                        "00b57c",
+                        "b53000","b50018",
+                        "00a0b5",
+                        "00d5f1"));
         initialisiereStatusListen();
         createPieModels();
     }
@@ -52,16 +58,13 @@ public class Dashboard implements Serializable {
         return null;
     }
 
-    private Map<String, List<String>> initialisiereGwbStatusListe() {
+    private Map<String, String> initialisiereGwbStatusListe() {
         this.gwbStatusListe.put(
-                "Freigegben",
-                new ArrayList<String>() {{ add("Freigegeben"); }} );
+                "Freigegben", "Freigegeben"  );
         this.gwbStatusListe.put(
-                "Unvollständig erfasst",
-                new ArrayList<String>() {{ add("Unvollständig erfasst"); }} );
+                "Unvollständig erfasst", "Unvollständig erfasst");
         this.gwbStatusListe.put(
-                "Abgemeldet",
-                new ArrayList<String>() {{ add("Abgemeldet"); }} );
+                "Abgemeldet", "Abgemeldet");
 
         return this.gwbStatusListe;
     }
@@ -85,12 +88,27 @@ public class Dashboard implements Serializable {
         npModel.set("Sonstige", 200);
 
         npModel.setTitle("NatürlichePersonen");
-        npModel.setSeriesColors("0cb500,00b57c,b53000,b50018,00a0b5,00d5f1");
+        npModel.setSeriesColors(insertColorMap(this.colorList));
         npModel.setShadow(false);
         npModel.setExtender("pieExtender");
 
         this.npGesamt = 1;
     }
+
+    private String insertColorMap(List<String> colorList) {
+        List<String> tmpColorList = new ArrayList<>();
+        colorList.forEach(color -> tmpColorList.add(color));
+        return String.join(",", tmpColorList);
+    }
+
+    public String getColorOfList(String color) {
+        return "#".concat(color);
+    }
+
+    public String doSomething(){
+            return null;
+    }
+
 
     private void createWpModel() {
         wpModel = new PieChartModel();
@@ -103,29 +121,29 @@ public class Dashboard implements Serializable {
         wpModel.set("Ersterfassung", 260);
 
         wpModel.setTitle("Wachpersonen");
-        wpModel.setSeriesColors("0cb500,00b57c,b53000,b50018,00a0b5,00d5f1");
+        wpModel.setSeriesColors(insertColorMap(this.colorList));
         wpModel.setShadow(false);
         wpModel.setExtender("pieExtender");
 
         this.wpGesamt = 2;
     }
 
-    private void createGwbModel(Map<String, List<String>> gwbStatusListe) {
+    private void createGwbModel(Map<String, String> gwbStatusListe) {
         gwbModel = new PieChartModel();
 
-        for(Map.Entry<String, List<String>> entry : gwbStatusListe.entrySet()){
+        for(Map.Entry<String, String> entry : gwbStatusListe.entrySet()){
             gwbModel.set(entry.getKey(),countGwbNachStatusListe(entry.getValue()));
         }
 
         gwbModel.setTitle("Gewerbebetriebe");
-        gwbModel.setSeriesColors("0cb500,00b57c,b53000");
+        gwbModel.setSeriesColors(insertColorMap(this.colorList));
         gwbModel.setShadow(false);
         gwbModel.setExtender("pieExtender");
 
         this.gwbGesamt = 3;
     }
 
-    private int countGwbNachStatusListe(List<String> statusListe) {
+    private int countGwbNachStatusListe(String status) {
         //TODO: dao aufrufen, um Objekte anhand Statusliste zu zaehlen
         return 42;
     }
@@ -221,5 +239,21 @@ public class Dashboard implements Serializable {
 
     public int getGwbGesamt() {
         return gwbGesamt;
+    }
+
+    public List<String> getColorList() {
+        return colorList;
+    }
+
+    public Map<String, List<String>> getNpStatusListe() {
+        return npStatusListe;
+    }
+
+    public Map<String, List<String>> getWpStatusListe() {
+        return wpStatusListe;
+    }
+
+    public Map<String, String> getGwbStatusListe() {
+        return gwbStatusListe;
     }
 }

@@ -126,16 +126,16 @@ body{
     font-weight: bold;
 }
 
-.jqplot-table-legend{
-    display: none;
-    text-align: left;
-}
+/*.jqplot-table-legend{*/
+/*    display: none;*/
+/*    text-align: left;*/
+/*}*/
 
-.jqplot-series-canvas {
-    background:white;
-    border: none;
-    box-shadow: none;
-}
+/*.jqplot-series-canvas {*/
+/*    background:white;*/
+/*    border: none;*/
+/*    box-shadow: none;*/
+/*}*/
 
 .link{
     margin-left: 10px;

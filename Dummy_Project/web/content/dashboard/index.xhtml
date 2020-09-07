@@ -70,7 +70,8 @@
                         </p:chart>
                         <div class="counter">42</div>
                         <div class="legende">
-                            <p:panelGrid class="panelgrid" columns="3" style="width:100%" columnClasses="left,right, ui-noborder">
+                            <p:panelGrid class="panelgrid" columns="3" style="width:100%"
+                                         columnClasses="left,right, ui-noborder">
                                 <p:column rendered="true" style="width:30%;">
                                     <span class="legende-dot np-wp-gwb-freigegeben"></span><p:outputLabel
                                         value="Freigegeben"
@@ -113,7 +114,14 @@
                         </p:chart>
                         <div class="counter">42</div>
                         <div class="legende">
-                            <p:panelGrid class="panelgrid" columns="3" style="width:100%" columnClasses="left,right, ui-noborder">
+                            <ui:repeat value="#{dashboard.gwbStatusListe.entrySet().toArray()}" var="entry">
+                                <ui:repeat value="#{dashboard.colorList}" var="color">
+                                    <div style="background-color:#{dashboard.getColorOfList(color)}">Olm</div>
+                                key:#{entry.key}
+                                </ui:repeat>
+                            </ui:repeat>
+                            <p:panelGrid class="panelgrid" columns="3" style="width:100%"
+                                         columnClasses="left,right, ui-noborder">
                                 <p:column rendered="true" style="width:30%;">
                                     <span class="legende-dot np-wp-gwb-freigegeben"></span><p:outputLabel
                                         value="Freigegeben"
