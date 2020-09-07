@@ -28,7 +28,8 @@ public class Dashboard implements Serializable {
     private Map<String, List<String>> wpStatusListe = new HashMap<>();
     private Map<String, String> gwbStatusListe = new LinkedHashMap<>();
 
-    Map<String, String> colorList = new LinkedHashMap<>();
+    List<String> colorList = new ArrayList<>();
+    Map<String, String> gwbColorlist = new LinkedHashMap<>();
 
     @PostConstruct
     public void init() {
@@ -39,6 +40,11 @@ public class Dashboard implements Serializable {
                         "b53000","b50018",
                         "00a0b5",
                         "00d5f1"));
+
+        this.gwbColorlist.put("Freigegeben", "0cb500");
+        this.gwbColorlist.put("Unvollständig Erfasst", "00b57c");
+        this.gwbColorlist.put("Abgemeldet", "b53000");
+        
         initialisiereStatusListen();
         createPieModels();
     }
