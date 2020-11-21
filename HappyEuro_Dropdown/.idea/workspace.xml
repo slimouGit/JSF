@@ -8,22 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5c3167da-3a28-48df-8c44-cef4fef7364f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Dummy_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dummy_Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HappyEuro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dummy_Project/src/main/java/de/dashboard/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dummy_Project/src/main/java/de/dashboard/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dummy_Project/target/Dummy_Project-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Dummy_Project/target/Dummy_Project-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dummy_Project/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Dummy_Project/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dummy_Project/web/content/dashboard/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dummy_Project/web/content/dashboard/index.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HappyEuro4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Enums/HE_List.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Enums/HE_List.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Enums/HE_Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Enums/HE_Type.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/HappyEuro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Properties/Properties.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/Properties/Properties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/content/Saved.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/WEB-INF/classes/content/Saved.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/content/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HappyEuro_Dropdown_war_exploded.war/content/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HappyEuro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HappyEuro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HappyEuro_Dropdown-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/HappyEuro_Dropdown-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HappyEuro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HappyEuro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HappyEuro4/src/main/java/he/pdf/PdfCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyEuro4/src/main/java/he/pdf/PdfCreator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,20 +51,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="88" column="67" selection-start-line="88" selection-start-column="67" selection-end-line="88" selection-end-column="67" />
+            <state relative-caret-position="347">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
@@ -169,7 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -266,6 +255,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,7 +264,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Ionic/photo-gallery" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HappyEuro" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -482,16 +472,18 @@
       <workItem from="1595613068413" duration="230000" />
       <workItem from="1595660224019" duration="1097000" />
       <workItem from="1595666700747" duration="37000" />
+      <workItem from="1605947223325" duration="805000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92728000" />
+    <option name="totallyTimeSpent" value="93533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="159" width="1767" height="882" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28763914" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29115406" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -507,7 +499,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32977304" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32977304" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3271028" />
@@ -594,49 +586,49 @@
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HappyEuro.java</url>
           <line>69</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HappyEuro.java</url>
           <line>71</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HappyEuro.java</url>
           <line>88</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HappyEuro.java</url>
           <line>91</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HappyEuro.java</url>
           <line>72</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HappyEuro.java</url>
           <line>73</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HappyEuro.java</url>
           <line>83</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HappyEuro.java</url>
           <line>64</line>
           <properties />
@@ -801,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="88" column="67" selection-start-line="88" selection-start-column="67" selection-end-line="88" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Enums/HE_List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -818,7 +803,14 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/HappyEuro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>

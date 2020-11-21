@@ -16,8 +16,8 @@
 </h:head>
 <f:view>
 
-    <ui:insert name="header">
-        <ui:include src="/template/header.xhtml"/>
+    <ui:insert name="header" >
+        <ui:include src="/template/header.xhtml" />
     </ui:insert>
 
     <h:form id="form">
@@ -35,18 +35,11 @@
                 <components:componentButton buttonValue="#{msg['button.SUBMIT']}" toUpdate="form:msgs form:positionList"
                                             buttonAction="#{happyEuro.displayDropdownValue()}"/>
 
-                <p:outputLabel value="Behörde: "/>
-                <p:autoComplete value="#{happyEuro.behoerde}" minQueryLength="3" maxResults="5"
-                                completeMethod="#{happyEuro.behoerdenList}"/>
+                <p:outputLabel value="Position: "/>
+                <p:autoComplete value="#{happyEuro.positionAuto}" completeMethod="#{happyEuro.positionList}"/>
 
-                <components:componentButton buttonValue="Anwenden" buttonAction="#{happyEuro.zeigeBehoerde()}"/>
-
-                <ui:remove>
-
-                    <components:componentButton buttonValue="#{msg['button.SUBMIT']}"
-                                                toUpdate="form:msgs form:positionList"
-                                                buttonAction="#{happyEuro.displayAutoselectValue()}"/>
-                </ui:remove>
+                <components:componentButton buttonValue="#{msg['button.SUBMIT']}" toUpdate="form:msgs form:positionList"
+                                            buttonAction="#{happyEuro.displayAutoselectValue()}"/>
 
 
             </h:panelGrid>
@@ -59,8 +52,8 @@
                     <h:outputText value="#{pos.type}"/>
                 </p:column>
                 <p:column headerText="Position">
-                    <p:inputText value="#{happyEuro.position}" rendered="#{empty pos.position}"/>
-                    <h:outputText value="#{pos.position}" rendered="#{not empty pos.position}"/>
+                        <p:inputText value="#{happyEuro.position}" rendered="#{empty pos.position}"/>
+                        <h:outputText value="#{pos.position}" rendered="#{not empty pos.position}"/>
                 </p:column>
                 <p:column headerText="Betrag">
                     <p:inputText value="#{happyEuro.amount}" rendered="#{pos.amount==0.0}"/>
@@ -73,7 +66,7 @@
 
                     <components:componentButton buttonValue="Ändern" toUpdate="form:msgs form:positionList"
                                                 buttonAction="#{happyEuro.addPosition()}"
-                    />
+                                                />
 
                     <components:componentButton buttonValue="Löschen" toUpdate="form:msgs form:positionList"
                                                 buttonAction="#{happyEuro.deletePosition(pos)}"/>
@@ -81,7 +74,7 @@
                 </p:column>
             </p:dataTable>
         </p:panel>
-        <p:inputText value="#{happyEuro.name}"/>
+        <p:inputText value="#{happyEuro.name}" />
         <components:componentButton buttonValue="Speichern" toUpdate="form:msgs form:positionList"
                                     buttonAction="#{happyEuro.navigateTo('saved.xhtml')}"
         />

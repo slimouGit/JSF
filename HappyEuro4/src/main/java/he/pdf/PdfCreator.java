@@ -52,7 +52,7 @@ public class PdfCreator {
         Document document = new Document(pdf);
 
         //Add paragraph to the document
-        document.add(new Paragraph("HappyEuro 4!"));
+            document.add(new Paragraph("HappyEuro 4!"));
 
         //Close document
         document.close();

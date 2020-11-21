@@ -44,7 +44,7 @@ public class Dashboard implements Serializable {
         this.gwbColorlist.put("Freigegeben", "0cb500");
         this.gwbColorlist.put("Unvollständig Erfasst", "00b57c");
         this.gwbColorlist.put("Abgemeldet", "b53000");
-        
+
         initialisiereStatusListen();
         createPieModels();
     }
@@ -261,5 +261,9 @@ public class Dashboard implements Serializable {
 
     public Map<String, String> getGwbStatusListe() {
         return gwbStatusListe;
+    }
+
+    public Map<String, String> getGwbColorlist() {
+        return gwbColorlist;
     }
 }

@@ -37,5 +37,22 @@
         <ui:include src="/template/footer.xhtml"/>
     </ui:insert>
 
+
+    <h:form id="dialog-doku">
+        <p:commandButton value="DublettenDialog" type="button" onclick="PF('dubletten-dialog').show();" />
+        <p:dialog header="DublettenDialog" widgetVar="dubletten-dialog" height="800" width="800">
+            <h:outputText value="Auflistung der Dublette" />
+
+            <h:panelGrid columns="3" style="margin:10px 0">
+                <p:outputLabel value="aufzulösende Person" style="font-weight:bold"/>
+                <p:outputLabel value="         " style="font-weight:bold"/>
+                <p:outputLabel value="führende Person" style="font-weight:bold"/>
+            </h:panelGrid>
+
+            <p:commandButton value="Dokumentieren" type="button" style="display:block;margin-bottom: 20px">
+                <p:printer target="dialog-doku" />
+            </p:commandButton>
+        </p:dialog>
+    </h:form>
 </f:view>
 </html>
